@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "wff-gal-resort-cloudy-fire-land.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "wff-gal-resort-cloudy-fire-land 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "wff-gal-resort-cloudy-fire-land 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

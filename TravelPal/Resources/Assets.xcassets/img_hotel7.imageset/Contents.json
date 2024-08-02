@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "anantara_al_jabal_al_akhdar_one_bedroom_garden_pool_villa_bedroom_01_1920x1037.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "anantara_al_jabal_al_akhdar_one_bedroom_garden_pool_villa_bedroom_01_1920x1037 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "anantara_al_jabal_al_akhdar_one_bedroom_garden_pool_villa_bedroom_01_1920x1037 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

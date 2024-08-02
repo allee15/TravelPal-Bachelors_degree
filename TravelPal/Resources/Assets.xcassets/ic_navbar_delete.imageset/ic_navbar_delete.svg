@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="ic_navbar_delete" transform="translate(-326 -56)">
+    <g id="BG" transform="translate(326 56)" fill="#fff" stroke="#f2f2f2" stroke-width="1">
+      <rect width="32" height="32" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" fill="none"/>
+    </g>
+    <g id="Group" transform="translate(-36.266 -514.136)">
+      <path id="Vector" d="M16.333.457A90.717,90.717,0,0,0,7.239,0,53.739,53.739,0,0,0,1.855.277L0,.457" transform="translate(370.1 581.596)" fill="none" stroke="#f24141" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-2" data-name="Vector" d="M0,2.7l.194-1.19C.332.651.443,0,1.979,0H4.36C5.9,0,6.007.678,6.146,1.509l.194,1.177" transform="translate(375.097 578.44)" fill="none" stroke="#f24141" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-3" data-name="Vector" d="M12.443,0l-.6,9.135c-.1,1.426-.18,2.533-2.713,2.533H3.308C.775,11.668.692,10.561.6,9.135L0,0" transform="translate(372.038 582.163)" fill="none" stroke="#f24141" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

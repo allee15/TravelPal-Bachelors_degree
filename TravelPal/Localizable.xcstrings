@@ -1,0 +1,1056 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Empty string)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "(Empty string)"
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld€" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld€"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld€"
+          }
+        }
+      }
+    },
+    "Access your TravelPal account" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Access your TravelPal account"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesează-ți contul TravelPal"
+          }
+        }
+      }
+    },
+    "Apple Card" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Card"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardul Apple"
+          }
+        }
+      }
+    },
+    "Arrival" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrival"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destinație"
+          }
+        }
+      }
+    },
+    "At the moment there weren't found any available flights." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At the moment there weren't found any available flights."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Pentru moment nu au fost găsite zboruri disponibile."
+          }
+        }
+      }
+    },
+    "At the moment, you're not member of a chat. Buy a flight ticket and then come back here!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At the moment, you're not member of a chat. Buy a flight ticket and then come back here!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pentru moment, nu faci parte dintr-un chat. Cumpără un bilet de avion și, apoi, revino aici!"
+          }
+        }
+      }
+    },
+    "Chats" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chats"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat-uri"
+          }
+        }
+      }
+    },
+    "Come back later or refresh the page!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come back later or refresh the page!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revino mai târziu sau reîncarcă pagina!"
+          }
+        }
+      }
+    },
+    "Congratulations! You are going on %@ to %@. Don't forget your passport and all the required documents!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Congratulations! You are going on %1$@ to %2$@. Don't forget your passport and all the required documents!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Felicitări! Vei merge %1$@ în %2$@. Nu îți uita pașaportul și toate documentele necesare!"
+          }
+        }
+      }
+    },
+    "Congratulations! You have your trip confirmed! Now it's time to join the chat. In the next part, you will find some accomodations recommandations. Enter the link below for more available options. Choosing a hotel it's optional, you can do this later from any website you want." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congratulations! You have your trip confirmed! Now it's time to join the chat. In the next part, you will find some accomodations recommandations. Enter the link below for more available options. Choosing a hotel it's optional, you can do this later from any website you want."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Felicitări! Călătoria ta este confirmată! Acum este timpul să te alături chat-ului. În următoarea secțiune, vei găsi câteva recomandări de cazări. Apasă pe linkul de mai jos pentru mai multe opțiuni. Alegerea unui hotel este opțională, acest pas putând fi realizat mai târziu, de pe orice site preferi."
+          }
+        }
+      }
+    },
+    "Departure" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Departure"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plecare"
+          }
+        }
+      }
+    },
+    "Departure information" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Departure information"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informații despre plecare"
+          }
+        }
+      }
+    },
+    "Directions" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Directions"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direcții"
+          }
+        }
+      }
+    },
+    "Duration: %lld minutes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duration: %lld minutes"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durată: %lld minute"
+          }
+        }
+      }
+    },
+    "Edit account" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit account"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editează contul"
+          }
+        }
+      }
+    },
+    "Email address" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email address"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresa de email"
+          }
+        }
+      }
+    },
+    "Enter in your account" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter in your account"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intră în contul tău"
+          }
+        }
+      }
+    },
+    "flight_ticket" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "flight_ticket"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "flight_ticket"
+          }
+        }
+      }
+    },
+    "Flight: %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flight: %@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zbor: %@"
+          }
+        }
+      }
+    },
+    "Flights" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flights"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zboruri"
+          }
+        }
+      }
+    },
+    "For more options, please click " : {
+
+    },
+    "For more options, please click %@." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For more options, please click %@."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pentru mai multe opțiuni, te rog apasă %@."
+          }
+        }
+      }
+    },
+    "Gender" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gender"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gen"
+          }
+        }
+      }
+    },
+    "Glad to see you! 👋 Enter your details below and access your account." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Glad to see you! 👋 Enter your details below and access your account."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suntem încântați să te vedem! 👋 Introdu-ți detaliile mai jos și accesează-ți contul."
+          }
+        }
+      }
+    },
+    "here" : {
+
+    },
+    "I read and agree to " : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I read and agree to "
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Am citit si accept"
+          }
+        }
+      }
+    },
+    "Join conversations with fellow travelers who share your passion for your dream holiday destination" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Join conversations with fellow travelers who share your passion for your dream holiday destination"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alătură-te conversațiilor cu colegii de călătorie care vă împărtășesc pasiunea pentru destinația de vacanță de vis"
+          }
+        }
+      }
+    },
+    "Join the chat! >>" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Join the chat! >>"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alătură-te chatului"
+          }
+        }
+      }
+    },
+    "Landing %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Landing %@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aterizare: %@"
+          }
+        }
+      }
+    },
+    "Let’s create your account" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let’s create your account"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hai să îți creăm cont"
+          }
+        }
+      }
+    },
+    "Lucretiu Patrascanu 4, Bucuresti" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lucrețiu Pătrășcanu 4, București"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lucrețiu Pătrășcanu 4, București"
+          }
+        }
+      }
+    },
+    "Meet and Explore with TravelPal" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meet and Explore with TravelPal"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Întâlnește și descoperă cu TravelPal"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nume"
+          }
+        }
+      }
+    },
+    "Nice to see you again," : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nice to see you again,"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ne pare bine să te revedem,"
+          }
+        }
+      }
+    },
+    "Note that in order to access the available chat for your trip, you have to press the button below!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note that in order to access the available chat for your trip, you have to press the button below!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reține că pentru a accesa chatul disponibil pentru călătoria ta, trebuie să apeși butonul de mai jos!"
+          }
+        }
+      }
+    },
+    "Password" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parolă"
+          }
+        }
+      }
+    },
+    "Pay" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pay"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plătește"
+          }
+        }
+      }
+    },
+    "Pay Apple Store" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pay Apple Store"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plătește cu Apple Store"
+          }
+        }
+      }
+    },
+    "Please accept terms." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please accept terms."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rog acceptă termenii."
+          }
+        }
+      }
+    },
+    "Please enter a name." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a name."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rog introdu un nume."
+          }
+        }
+      }
+    },
+    "Please enter a valid email address." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid email address."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rog introdu o adresă de e-mail validă."
+          }
+        }
+      }
+    },
+    "Please enter a valid password." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid password."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rog introdu o parolă validă"
+          }
+        }
+      }
+    },
+    "Please enter your details below" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter your details below"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rog introdu detaliile tale mai jos"
+          }
+        }
+      }
+    },
+    "Please login to enjoy the full experience of TravelPall app!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please login to enjoy the full experience of TravelPall app!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rugam să te conectezi pentru a te bucura de experiența completă a aplicației TravelPall!"
+          }
+        }
+      }
+    },
+    "Please select a gender." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please select a gender."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rog selectează un gen."
+          }
+        }
+      }
+    },
+    "Price: %lld€" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price: %lld€"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preț: %lld€"
+          }
+        }
+      }
+    },
+    "Profile" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil"
+          }
+        }
+      }
+    },
+    "Save Changes" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save Changes"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvează modificările"
+          }
+        }
+      }
+    },
+    "See details >" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See details >"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vezi detalii >"
+          }
+        }
+      }
+    },
+    "Select title" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select title"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selectează titlul"
+          }
+        }
+      }
+    },
+    "Select your departure" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select your departure"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selectează locul de plecare"
+          }
+        }
+      }
+    },
+    "Select your destination" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select your destination"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selectează destinația"
+          }
+        }
+      }
+    },
+    "Show directions" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show directions"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arată indicații"
+          }
+        }
+      }
+    },
+    "Show Results" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Results"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arată rezultate"
+          }
+        }
+      }
+    },
+    "Take off %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take off %@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decolare: %@"
+          }
+        }
+      }
+    },
+    "The Terms and Conditions" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Terms and Conditions"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termenii și Condițiile"
+          }
+        }
+      }
+    },
+    "This field is required" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This field is required"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acest câmp este obligatoriu"
+          }
+        }
+      }
+    },
+    "Title" : {
+
+    },
+    "Traveler" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traveler"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Călătorule"
+          }
+        }
+      }
+    },
+    "Trip to %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trip to %@"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Excursie la %@"
+          }
+        }
+      }
+    },
+    "Type your message" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type your message"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introdu mesajul tău"
+          }
+        }
+      }
+    },
+    "You'll be added to a chat for your destination! At the moment, there are %lld participants." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You'll be added to a chat for your destination! At the moment, there are %lld participants."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vei fi adăugat la un chat pentru destinația ta! În acest moment, există %lld participanți."
+          }
+        }
+      }
+    },
+    "Your chats" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your chats"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chat-urile tale"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
