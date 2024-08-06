@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         NFX.sharedInstance().start()
-//        STPPaymentConfiguration.shared().publishableKey = "sk_test_51NzPkBFsUJrHtrhWlwiD8MCBEZKKA22zr0rM0PCOo5XU7EUxReZlRMhlNhqan199k8Z3eObxScKdgVod1dNGarpM00OzSUewgH"
         return true
     }
     

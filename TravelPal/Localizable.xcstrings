@@ -140,7 +140,7 @@
         },
         "ro" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Pentru moment nu au fost găsite zboruri disponibile."
           }
         }
@@ -440,7 +440,14 @@
       }
     },
     "here" : {
-
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "aici"
+          }
+        }
+      }
     },
     "I read and agree to " : {
       "localizations" : {
@@ -968,7 +975,14 @@
       }
     },
     "Title" : {
-
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titlu"
+          }
+        }
+      }
     },
     "Traveler" : {
       "localizations" : {

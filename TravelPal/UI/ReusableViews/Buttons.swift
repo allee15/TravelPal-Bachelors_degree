@@ -63,13 +63,21 @@ struct RedButtonView: View {
 struct BlackButtonView: View {
     let text: String
     var isDisabled: Bool = false
+    var icon: ImageResource?
     var action: () -> ()
     var body: some View {
         Button {
             action()
         } label: {
-            Text(text)
-                .font(.Poppins.semiBold(size: 14))
+            HStack (spacing: 8) {
+                Text(text)
+                    
+                if let icon = icon {
+                    Image(icon)
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                }
+            }.font(.Poppins.semiBold(size: 14))
                 .padding(.all, 12)
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)

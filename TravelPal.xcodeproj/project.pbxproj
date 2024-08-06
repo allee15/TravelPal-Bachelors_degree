@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F342DD32C6244170093C08C /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F342DD22C6244170093C08C /* Image+.swift */; };
+		0F342DD72C625ED60093C08C /* ApplePayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F342DD62C625ED60093C08C /* ApplePayButtonView.swift */; };
 		0FDCC0642C1DA0330079B737 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */; };
 		0FDCC0672C1DA06D0079B737 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0662C1DA06D0079B737 /* StartViewModel.swift */; };
 		0FDCC0692C1DA4600079B737 /* FloatingField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0682C1DA4600079B737 /* FloatingField.swift */; };
@@ -25,7 +27,6 @@
 		8C12851B2A8CC8E7007F4AE8 /* DepartureOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1285192A8CC8E7007F4AE8 /* DepartureOptionsViewModel.swift */; };
 		8C12851C2A8CC8E7007F4AE8 /* DepartureOptionsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12851A2A8CC8E7007F4AE8 /* DepartureOptionsScreenView.swift */; };
 		8C1285222A8CC8F4007F4AE8 /* MapCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12851F2A8CC8F4007F4AE8 /* MapCarView.swift */; };
-		8C1285232A8CC8F4007F4AE8 /* FlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1285202A8CC8F4007F4AE8 /* FlightView.swift */; };
 		8C1285272A8CC904007F4AE8 /* TabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1285252A8CC903007F4AE8 /* TabBarScreen.swift */; };
 		8C1285282A8CC904007F4AE8 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1285262A8CC904007F4AE8 /* TabBarViewModel.swift */; };
 		8C12852B2A8CC913007F4AE8 /* AccountScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12852A2A8CC913007F4AE8 /* AccountScreenView.swift */; };
@@ -90,7 +91,6 @@
 		9BD51B5C2B5830DB0083745C /* StripeCardScan in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD51B5B2B5830DB0083745C /* StripeCardScan */; };
 		9BD51B5E2B5830DB0083745C /* StripeFinancialConnections in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD51B5D2B5830DB0083745C /* StripeFinancialConnections */; };
 		9BD51B602B5830DB0083745C /* StripeIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD51B5F2B5830DB0083745C /* StripeIdentity */; };
-		9BD51B622B5871780083745C /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD51B612B5871780083745C /* PaymentButton.swift */; };
 		9BE570D32A839015003E6CEF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE570D22A839015003E6CEF /* Kingfisher */; };
 		9BE570D72A83943B003E6CEF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE570D62A83943B003E6CEF /* Fonts.swift */; };
 		9BE570D92A83999E003E6CEF /* LogInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE570D82A83999E003E6CEF /* LogInScreenView.swift */; };
@@ -102,13 +102,13 @@
 		9BF51CFB2A9CF36500F9168B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF51CFA2A9CF36500F9168B /* Route.swift */; };
 		9BF51CFD2A9CF79100F9168B /* RoutesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF51CFC2A9CF79100F9168B /* RoutesService.swift */; };
 		9BF51CFF2A9E70D800F9168B /* LocationPermissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF51CFE2A9E70D800F9168B /* LocationPermissionViewModel.swift */; };
-		9BF53BB22B59CE2600A154EC /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF53BB12B59CE2600A154EC /* CarView.swift */; };
-		9BF53BB42B59D12500A154EC /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF53BB32B59D12500A154EC /* BottomSheetView.swift */; };
 		9BF53BB62B59D6AD00A154EC /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF53BB52B59D6AD00A154EC /* TabButton.swift */; };
 		9BF53BB92B59D6DD00A154EC /* UnloggedUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF53BB82B59D6DD00A154EC /* UnloggedUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F342DD22C6244170093C08C /* Image+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+.swift"; sourceTree = "<group>"; };
+		0F342DD62C625ED60093C08C /* ApplePayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayButtonView.swift; sourceTree = "<group>"; };
 		0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0662C1DA06D0079B737 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0682C1DA4600079B737 /* FloatingField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingField.swift; sourceTree = "<group>"; };
@@ -128,7 +128,6 @@
 		8C1285192A8CC8E7007F4AE8 /* DepartureOptionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureOptionsViewModel.swift; sourceTree = "<group>"; };
 		8C12851A2A8CC8E7007F4AE8 /* DepartureOptionsScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureOptionsScreenView.swift; sourceTree = "<group>"; };
 		8C12851F2A8CC8F4007F4AE8 /* MapCarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCarView.swift; sourceTree = "<group>"; };
-		8C1285202A8CC8F4007F4AE8 /* FlightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightView.swift; sourceTree = "<group>"; };
 		8C1285252A8CC903007F4AE8 /* TabBarScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarScreen.swift; sourceTree = "<group>"; };
 		8C1285262A8CC904007F4AE8 /* TabBarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		8C12852A2A8CC913007F4AE8 /* AccountScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountScreenView.swift; sourceTree = "<group>"; };
@@ -198,7 +197,6 @@
 		9BD51B402B581CDE0083745C /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		9BD51B422B581CEE0083745C /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		9BD51B442B581CF90083745C /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		9BD51B612B5871780083745C /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		9BE570D62A83943B003E6CEF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		9BE570D82A83999E003E6CEF /* LogInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreenView.swift; sourceTree = "<group>"; };
 		9BE570DA2A83C46B003E6CEF /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
@@ -216,8 +214,6 @@
 		9BF51CFA2A9CF36500F9168B /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		9BF51CFC2A9CF79100F9168B /* RoutesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesService.swift; sourceTree = "<group>"; };
 		9BF51CFE2A9E70D800F9168B /* LocationPermissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionViewModel.swift; sourceTree = "<group>"; };
-		9BF53BB12B59CE2600A154EC /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
-		9BF53BB32B59D12500A154EC /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		9BF53BB52B59D6AD00A154EC /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		9BF53BB82B59D6DD00A154EC /* UnloggedUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnloggedUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,7 +261,6 @@
 		0FDCC0612C1D9FA30079B737 /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
-				9BD51B612B5871780083745C /* PaymentButton.swift */,
 				9BB8A4252AB721F5004EE67C /* LoaderView.swift */,
 				0FDCC0682C1DA4600079B737 /* FloatingField.swift */,
 				9BF53BB52B59D6AD00A154EC /* TabButton.swift */,
@@ -274,6 +269,7 @@
 				9B51B6E32A93A09500587159 /* Buttons.swift */,
 				0FDCC06E2C1DB8140079B737 /* NavBarView.swift */,
 				9BD51AF12B4C04F00083745C /* WebViewScreen.swift */,
+				0F342DD62C625ED60093C08C /* ApplePayButtonView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -338,9 +334,6 @@
 			children = (
 				9BF51CFE2A9E70D800F9168B /* LocationPermissionViewModel.swift */,
 				8C12851F2A8CC8F4007F4AE8 /* MapCarView.swift */,
-				9BF53BB12B59CE2600A154EC /* CarView.swift */,
-				8C1285202A8CC8F4007F4AE8 /* FlightView.swift */,
-				9BF53BB32B59D12500A154EC /* BottomSheetView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -507,6 +500,7 @@
 				9B46E6032A7BD35600D533BE /* Frameworks */,
 				9B46E5E42A7B973200D533BE /* Products */,
 				9B46E5F52A7B9A4D00D533BE /* GoogleService-Info.plist */,
+				0F342DD22C6244170093C08C /* Image+.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -524,7 +518,6 @@
 				9B7B511C2B23116600D3A622 /* Flight */,
 				8C1285292A8CC90E007F4AE8 /* Account */,
 				9B51B6F62A94EF7A00587159 /* Chat */,
-				9B51B6FB2A94F84600587159 /* Conversation */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -573,6 +566,7 @@
 			children = (
 				9B51B6F72A94F04000587159 /* ChatScreenVieww.swift */,
 				9B51B6F92A94F05E00587159 /* ChatViewModell.swift */,
+				9B51B6FB2A94F84600587159 /* Conversation */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -800,14 +794,13 @@
 				9B51B6E22A9391DE00587159 /* UserDefaultsService.swift in Sources */,
 				0FDCC06B2C1DA4A90079B737 /* ModalChooseOptionView.swift in Sources */,
 				9BF53BB92B59D6DD00A154EC /* UnloggedUserView.swift in Sources */,
-				9BD51B622B5871780083745C /* PaymentButton.swift in Sources */,
 				9B2766FE2A9C8E29002BD7C9 /* AirportsAPI.swift in Sources */,
 				9B51B6F32A94AED600587159 /* Message.swift in Sources */,
+				0F342DD32C6244170093C08C /* Image+.swift in Sources */,
 				9BF53BB62B59D6AD00A154EC /* TabButton.swift in Sources */,
 				0FDCC0692C1DA4600079B737 /* FloatingField.swift in Sources */,
 				0FDCC0672C1DA06D0079B737 /* StartViewModel.swift in Sources */,
 				0FDCC06D2C1DAB6C0079B737 /* String+.swift in Sources */,
-				9BF53BB42B59D12500A154EC /* BottomSheetView.swift in Sources */,
 				9BE570E52A84E17D003E6CEF /* OnBoardingScreenView.swift in Sources */,
 				8C78B50D2A8CCA9000FED0C9 /* AppNavigationBarService.swift in Sources */,
 				8C1285172A8CC8D6007F4AE8 /* RoutesScreenView.swift in Sources */,
@@ -832,11 +825,9 @@
 				9B51B6E82A93B02400587159 /* View+.swift in Sources */,
 				0FDCC06F2C1DB8140079B737 /* NavBarView.swift in Sources */,
 				9B51B6E42A93A09500587159 /* Buttons.swift in Sources */,
-				8C1285232A8CC8F4007F4AE8 /* FlightView.swift in Sources */,
 				9BE570D72A83943B003E6CEF /* Fonts.swift in Sources */,
 				9BE570D92A83999E003E6CEF /* LogInScreenView.swift in Sources */,
 				9B46E5E72A7B973200D533BE /* RootView.swift in Sources */,
-				9BF53BB22B59CE2600A154EC /* CarView.swift in Sources */,
 				8C1285012A8CC87C007F4AE8 /* MainScreenView.swift in Sources */,
 				9BD51AF22B4C04F00083745C /* WebViewScreen.swift in Sources */,
 				9B2766FA2A977E0F002BD7C9 /* FirestoreService.swift in Sources */,
@@ -851,6 +842,7 @@
 				8C1285222A8CC8F4007F4AE8 /* MapCarView.swift in Sources */,
 				9B2766F52A96442F002BD7C9 /* ConversationViewModel.swift in Sources */,
 				9B51B6F82A94F04000587159 /* ChatScreenVieww.swift in Sources */,
+				0F342DD72C625ED60093C08C /* ApplePayButtonView.swift in Sources */,
 				8C12852F2A8CC927007F4AE8 /* AccomodationScreenView.swift in Sources */,
 				0FDCC0642C1DA0330079B737 /* OnboardingViewModel.swift in Sources */,
 				8C1285282A8CC904007F4AE8 /* TabBarViewModel.swift in Sources */,

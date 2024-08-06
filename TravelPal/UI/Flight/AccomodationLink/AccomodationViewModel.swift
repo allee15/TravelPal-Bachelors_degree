@@ -12,10 +12,9 @@ import PDFKit
 import SwiftUI
 
 class AccomodationViewModel: BaseViewModel {
+    private var firestoreService = FirestoreService.shared
+    
     @Published var route: Route
-    @Published var weekDay: String
-    @Published var countUsers: Int
-    @Published var countryDep: Country
     @Published var countryArr: Country
     @Published var image: Image?
     @Published var hotels: [String] = ["img_hotel1",
@@ -29,16 +28,9 @@ class AccomodationViewModel: BaseViewModel {
                                        "img_hotel9",
                                        "img_hotel0"]
     
-    var firestoreService = FirestoreService.shared
-    var address: String
-    
-    init(route: Route, weekDay: String, countryDep: Country, countryArr: Country, countUsers: Int, image: Image?) {
+    init(route: Route, countryArr: Country, image: Image?) {
         self.route = route
-        self.address = route.arrName
-        self.weekDay = weekDay
-        self.countryDep = countryDep
         self.countryArr = countryArr
-        self.countUsers = countUsers
         self.image = image
         super.init()
     }
@@ -59,7 +51,7 @@ class AccomodationViewModel: BaseViewModel {
     }
     
     func openMap() {
-        if let encodedAddress = self.address.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+        if let encodedAddress = self.route.arrName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
            let url = URL(string: "https://www.google.com/maps/place/\(encodedAddress)") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }

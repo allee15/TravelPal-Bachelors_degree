@@ -6,11 +6,13 @@
 //
 
 import Foundation
-import UIKit
 import Firebase
 import CoreLocation
+import SwiftUI
 
 class DepartureOptionsViewModel: BaseViewModel {
+    var userService = UserService.shared
+    
     @Published var route: Route
     @Published var user: User?
     @Published var weekDay: String
@@ -21,8 +23,7 @@ class DepartureOptionsViewModel: BaseViewModel {
     @Published var countUsers: Int
     @Published var selectedDate: Date
     @Published var tabSelected: TabSelected = .flight
-    
-    var userService = UserService.shared
+    @Published var image: Image?
     
     init(route: Route, weekDay: String, address: String, depAirport: Airport, arrAirport: Airport, countryDep: Country, countryArr: Country, countUsers: Int, selectedDate: Date) {
         self.route = route

@@ -26,7 +26,7 @@ struct AccomodationScreenView: View {
                             Image(.icShare)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 32, height: 32)
+                                .frame(width: 24, height: 24)
                         }
                     }.padding(.top, 24)
                         .padding(.horizontal, 16)

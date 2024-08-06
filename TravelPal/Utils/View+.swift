@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 extension View {
     func placeHolderMessage<Content: View>(
         when shouldShow: Bool,
