@@ -82,7 +82,8 @@ struct AccomodationScreenView: View {
                 }.padding(.bottom, 24)
                 .padding(.horizontal, 16)
             }
-        }
+        }.ignoresSafeArea(.container, edges: [.horizontal, .bottom])
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear {
             ToastManager.instance?.show(
                 Toast(
@@ -90,14 +91,21 @@ struct AccomodationScreenView: View {
                     textColor: Color.accentTertiary
                 ))
         }
-        .sheet(isPresented: $showModal) {
-            ModalChooseOptionView(title: "Your trip is confirmed!",
-                                  description: "Now, all you have to do is to press the button below in order to join the chat. Have a safe and an amazing trip! Thank you for choosing to travel with us.❤️", topButtonText: "Go to chat") {
-                viewModel.updateUser()
-                viewModel.addUser()
-                viewModel.addChat()
-                navigation.popToRoot(animated: false)
-                AppNavigationBarService.shared.tabBar.value = .chats
+        .onChange(of: showModal) { newValue in
+            if newValue {
+                let modal = ModalChooseOptionView(title: "Your trip is confirmed!",
+                                                  description: "Now, all you have to do is to press the button below in order to join the chat. Have a safe and an amazing trip! Thank you for choosing to travel with us.❤️", topButtonText: "Go to chat") {
+                                viewModel.updateUser()
+                                viewModel.addUser()
+                                viewModel.addChat()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                    navigation.dismissModal(animated: true, completion: nil)
+                                    navigation.popToRoot(animated: false)
+                                    AppNavigationBarService.shared.tabBar.value = .chats
+                                }
+                            }
+                
+                navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
             }
         }
     }

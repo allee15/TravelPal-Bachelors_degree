@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 import Firebase
-import Stripe
 import netfox
 
 @main

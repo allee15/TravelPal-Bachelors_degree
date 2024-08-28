@@ -7,6 +7,5 @@ target 'TravelPal' do
 
   # Pods for TravelPal
 #  pod "XNLogger"
-  pod "Stripe"
   
 end
