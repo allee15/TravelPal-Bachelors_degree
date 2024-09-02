@@ -103,6 +103,7 @@ struct DepartureOptionsScreenView: View {
                     let destinationVM = AccomodationViewModel(route: viewModel.route,
                                                               countryArr: viewModel.countryArr,
                                                               image: viewModel.image)
+                    
                     navigation.presentPopup(LoaderView().asDestination(), animated: true, completion: nil)
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {

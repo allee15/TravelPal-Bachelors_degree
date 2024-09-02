@@ -16,7 +16,7 @@ struct AccountScreenView: View {
         VStack(spacing: 0) {
             if let user = viewModel.user, !user.isAnonymous {
                 HStack(spacing: 0) {
-                    Image("logo_app1")
+                    Image(.logoApp1)
                         .resizable()
                         .frame(width: 153, height: 27)
                         .padding(.horizontal, 16)
@@ -30,7 +30,7 @@ struct AccountScreenView: View {
                         .padding(.top, 28)
                     
                     VStack(alignment: .leading, spacing: 12) {
-                        WidgetView(title: "Terms and Conditions", icon: "ic_terms") {
+                        WidgetView(title: "Terms and Conditions", icon: .icTerms) {
                             let webview = WebViewScreen(
                                 title: "Terms and Conditions",
                                 url: URL(string: "https://www.termsandconditionsgenerator.com/live.php?token=PiVV3ZACQYyqXIbXBFFhQMDNtBY90XBx")!
@@ -38,7 +38,7 @@ struct AccountScreenView: View {
                             mainNavigation?.push(webview, animated: true)
                         }
                         
-                        WidgetView(title: "Contact us", icon: "ic_contactus") {
+                        WidgetView(title: "Contact us", icon: .icContactus) {
                             let email = "alexia.elena.aldea@gmail.com"
                             let urlString = "mailto:\(email)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
                             
@@ -49,7 +49,7 @@ struct AccountScreenView: View {
                             }
                         }
                         
-                        WidgetView(title: "Change language", icon: "ic_change_language") {
+                        WidgetView(title: "Change language", icon: .icChangeLanguage) {
                             let appSettingsURL = URL(string: UIApplication.openSettingsURLString)!
                                 .appendingPathComponent(Bundle.main.bundleIdentifier!)
                             if URL(string: UIApplication.openSettingsURLString) != nil {
@@ -57,12 +57,17 @@ struct AccountScreenView: View {
                             }
                         }
                         
-                        WidgetView(title: "Edit account", icon: "ic_editaccount") {
+                        WidgetView(title: "Change theme", icon: .icChangeTheme) {
+                            mainNavigation?.push(ChangeThemeScreenView().asDestination(),
+                                            animated: true)
+                        }
+                        
+                        WidgetView(title: "Edit account", icon: .icEditaccount) {
                             mainNavigation?.push(EditAccountScreenView().asDestination(),
                                             animated: true)
                         }
                         
-                        WidgetView(title: "Logout", icon: "ic_logout") {
+                        WidgetView(title: "Logout", icon: .icLogout) {
                             let modal = ModalChooseOptionView(title: "Are you sure you want to logout?",
                                                               description: "You will not have access to your chats and you will not be able to buy new flight tickets if you are logged out.",
                                                               topButtonText: "Logout",
@@ -76,7 +81,7 @@ struct AccountScreenView: View {
                             navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
                         }
                         
-                        WidgetView(title: "Delete account", icon: "ic_deleteaccount") {
+                        WidgetView(title: "Delete account", icon: .icDeleteaccount) {
                             let modal = ModalChooseOptionView(title: "Are you sure you want to delete your account?",
                                                               description: "You will not be able to recover it after deleting it. All your data will be lost, including your chats and your past flight tickets.",
                                                               topButtonText: "Delete my account",
@@ -127,7 +132,7 @@ struct AccountScreenView: View {
 
 fileprivate struct WidgetView: View {
     let title: String
-    let icon: String
+    let icon: ImageResource
     let action: () -> ()
     
     var body: some View {

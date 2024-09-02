@@ -98,6 +98,9 @@
         }
       }
     },
+    "Add a photo" : {
+
+    },
     "Apple Card" : {
       "localizations" : {
         "en" : {
@@ -289,6 +292,9 @@
           }
         }
       }
+    },
+    "Discover the city you are visiting" : {
+
     },
     "Duration: %lld minutes" : {
       "localizations" : {
@@ -850,6 +856,9 @@
           }
         }
       }
+    },
+    "Scan a monument and find out more about it! Play our mini-game to test yourself, collect points and TODO!!!!" : {
+
     },
     "See details >" : {
       "localizations" : {
