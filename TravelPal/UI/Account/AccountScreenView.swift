@@ -95,7 +95,7 @@ struct AccountScreenView: View {
                             navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
                         }
                         
-                        WidgetView(title: "App version \(viewModel.appVersion)", icon: .icAppVersion) {}
+                        WidgetView(title: "App version \(viewModel.appVersion)", icon: .icAppVersion, showToggle: false) {}
                     }
                 }
             } else {
@@ -135,6 +135,7 @@ struct AccountScreenView: View {
 fileprivate struct WidgetView: View {
     let title: String
     let icon: ImageResource
+    var showToggle: Bool = true
     let action: () -> ()
     
     var body: some View {
@@ -152,9 +153,11 @@ fileprivate struct WidgetView: View {
                 
                 Spacer()
                 
-                Image("ic_itemresult_arrow")
-                    .resizable()
-                    .frame(width: 16, height: 16)
+                if showToggle {
+                    Image(.icItemresultArrow)
+                        .resizable()
+                        .frame(width: 16, height: 16)
+                }
             }.padding(.horizontal, 16)
                 .padding(.vertical, 12)
                 .background(.white)
