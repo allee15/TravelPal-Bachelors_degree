@@ -274,6 +274,22 @@
         }
       }
     },
+    "Discover" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descoperă"
+          }
+        }
+      }
+    },
     "Duration: %lld minutes" : {
       "localizations" : {
         "en" : {
@@ -388,7 +404,14 @@
       }
     },
     "For more options, please click " : {
-
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pentru mai multe opțiuni, te rog apasă "
+          }
+        }
+      }
     },
     "For more options, please click %@." : {
       "extractionState" : "stale",
@@ -438,6 +461,9 @@
           }
         }
       }
+    },
+    "Hello, World!" : {
+
     },
     "here" : {
       "localizations" : {
@@ -976,6 +1002,12 @@
     },
     "Title" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",

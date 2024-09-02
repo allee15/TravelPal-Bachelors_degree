@@ -48,7 +48,7 @@ struct OnBoardingScreenView: View {
                     
                     BlackButtonView(text: "Continue as Guest") {
                         viewModel.userDefaultsService.setOnboarding(onboardingIsOver: true)
-                        navigation.replaceNavigationStack([MainScreenView().asDestination()], animated: true)
+                        navigation.replaceNavigationStack([TabBarScreen().asDestination()], animated: true)
                     }
                 }.padding(.horizontal, 16)
                     .padding(.bottom, 12)

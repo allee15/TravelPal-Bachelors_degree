@@ -85,7 +85,7 @@ struct AccomodationScreenView: View {
         }.ignoresSafeArea(.container, edges: [.horizontal, .bottom])
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear {
-            ToastManager.instance?.show(
+            ToastManager.instance.show(
                 Toast(
                     text: "Payment successful!",
                     textColor: Color.accentTertiary
@@ -101,7 +101,7 @@ struct AccomodationScreenView: View {
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                     navigation.dismissModal(animated: true, completion: nil)
                                     navigation.popToRoot(animated: false)
-                                    AppNavigationBarService.shared.tabBar.value = .chats
+                                    TabBarCoordinator.instance.tabBarNavigation = .chats
                                 }
                             }
                 

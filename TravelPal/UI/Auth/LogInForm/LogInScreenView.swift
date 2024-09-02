@@ -85,7 +85,7 @@ struct LogInScreenView: View {
                 }
                 navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
             case .login:
-                navigation.replaceNavigationStack([MainScreenView().asDestination()], animated: true)
+                navigation.replaceNavigationStack([TabBarScreen().asDestination()], animated: true)
             }
         }
     }

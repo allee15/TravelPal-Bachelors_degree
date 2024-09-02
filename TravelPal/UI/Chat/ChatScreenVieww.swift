@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatScreenView: View {
     @StateObject var viewModel = ChatViewModel()
-    @EnvironmentObject private var navigation: Navigation
+    private let mainNavigation = EnvironmentObjects.navigation
     
     var body: some View {
         if let user = viewModel.user, !user.isAnonymous {
@@ -35,7 +35,7 @@ struct ChatScreenView: View {
                         ForEach(viewModel.userCities, id: \.name) { city in
                             Button {
                                 let destinationViewModel = ConversationViewModel(city: city.name)
-                                navigation.push(ConversationScreenView(viewModel: destinationViewModel).asDestination(),
+                                mainNavigation?.push(ConversationScreenView(viewModel: destinationViewModel).asDestination(),
                                                 animated: true)
                             } label: {
                                 ChatCardView(cityName: city.name,

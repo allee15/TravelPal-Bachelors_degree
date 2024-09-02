@@ -74,7 +74,7 @@ struct EditAccountScreenView: View {
                 }
                 
                 navigation.pop(animated: true)
-                ToastManager.instance?.show(
+                ToastManager.instance.show(
                     Toast(
                         text: "Edit successful!",
                         textColor: Color.accentTertiary

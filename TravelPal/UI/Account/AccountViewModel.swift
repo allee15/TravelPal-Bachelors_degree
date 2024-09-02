@@ -11,6 +11,12 @@ import FirebaseAuth
 import Firebase
 import FirebaseStorage
 
+enum ThemeType: String, CaseIterable {
+    case light
+    case dark
+    case system
+}
+
 enum LogOutCompletion {
     case logout
     case delete

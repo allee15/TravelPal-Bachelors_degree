@@ -34,7 +34,7 @@ struct CloseButton: View {
     
     var body: some View {
         Button {
-            navigation.replaceNavigationStack([MainScreenView().asDestination()], animated: true)
+            navigation.replaceNavigationStack([TabBarScreen().asDestination()], animated: true)
         } label: {
             Image("ic_nav_close")
                 .frame(width: 32, height: 32)

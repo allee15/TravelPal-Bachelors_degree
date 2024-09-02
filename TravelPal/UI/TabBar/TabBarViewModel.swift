@@ -6,24 +6,17 @@
 //
 
 import Foundation
-import SwiftUI
 import Combine
+
+enum NavTabs: Equatable {
+    case home
+    case chats
+    case discover
+    case account
+}
 
 class TabBarViewModel: BaseViewModel {
     @Published var tabBar: NavTabs = .home
-    let appNavigationBarService = AppNavigationBarService.shared
+    public var oldTabBar: NavTabs = .home
     
-    override init() {
-        super.init()
-        appNavigationBarService.tabBar
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] value in
-                self?.tabBar = value
-            }
-            .store(in: &bag)
-    }
-    
-    func setTabBar(value: NavTabs) {
-        appNavigationBarService.tabBar.value = value
-    }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RoutesScreenView: View {
     @ObservedObject var viewModel: RoutesViewModel
-    @EnvironmentObject private var navigation: Navigation
+    private let mainNavigation = EnvironmentObjects.navigation
     
     var body: some View {
         Button {
@@ -22,7 +22,7 @@ struct RoutesScreenView: View {
                                                                       countryArr: viewModel.countryArr,
                                                                       countUsers: viewModel.countUsers,
                                                                       selectedDate: viewModel.selectedDate)
-            navigation.push(DepartureOptionsScreenView(viewModel: departureOptionsViewModel).asDestination(),
+            mainNavigation?.push(DepartureOptionsScreenView(viewModel: departureOptionsViewModel).asDestination(),
                             animated: true)
         } label: {
             VStack(alignment: .leading, spacing: 12) {
@@ -131,7 +131,7 @@ struct RoutesScreenView: View {
                                                                                   countryArr: viewModel.countryArr,
                                                                                   countUsers: viewModel.countUsers,
                                                                                   selectedDate: viewModel.selectedDate)
-                        navigation.push(DepartureOptionsScreenView(viewModel: departureOptionsViewModel).asDestination(), 
+                        mainNavigation?.push(DepartureOptionsScreenView(viewModel: departureOptionsViewModel).asDestination(), 
                                         animated: true)
                     } label: {
                         Text("See details >")

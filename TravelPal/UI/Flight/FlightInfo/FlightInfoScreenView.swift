@@ -35,7 +35,7 @@ struct FlightInfoScreenView: View {
             VStack(spacing: 0) {
                 VStack(alignment: .leading, spacing: 0) {
                     
-                    Image("logo_app")
+                    Image(.logoApp)
                         .resizable()
                         .frame(width: 142, height: 24)
                         .padding(.bottom, 12)

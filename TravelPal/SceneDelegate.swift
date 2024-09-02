@@ -9,20 +9,19 @@ import UIKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-//    private var navigation: Navigation!
+    
     var window: UIWindow?
       
-    private var navigation = Navigation(
-        root: LaunchscreenRepresentable()
+    private let navigation = Navigation(
+        root: ControllerRepresentable(controller: UIStoryboard(name: "LaunchScreen", bundle: .main).instantiateInitialViewController()!)
             .ignoresSafeArea()
             .asDestination()
     )
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
+        EnvironmentObjects.navigation = navigation
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            navigation = Navigation(root: StartScreenView().asDestination())
             window.rootViewController = UIHostingController(rootView: RootView(navigation: navigation))
             self.window = window
             window.makeKeyAndVisible()

@@ -9,7 +9,7 @@ import SwiftUI
 
 class ToastManager: ObservableObject {
     
-    static weak var instance: ToastManager?
+    static let instance = ToastManager()
     
     @Published private(set) var toast: Toast?
     

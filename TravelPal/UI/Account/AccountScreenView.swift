@@ -10,7 +10,7 @@ import SwiftUI
 struct AccountScreenView: View {
     @ObservedObject var viewModel = AccountViewModel()
     @EnvironmentObject private var navigation: Navigation
-    
+    private let mainNavigation = EnvironmentObjects.navigation
     
     var body: some View {
         VStack(spacing: 0) {
@@ -35,7 +35,7 @@ struct AccountScreenView: View {
                                 title: "Terms and Conditions",
                                 url: URL(string: "https://www.termsandconditionsgenerator.com/live.php?token=PiVV3ZACQYyqXIbXBFFhQMDNtBY90XBx")!
                             ).asDestination()
-                            navigation.push(webview, animated: true)
+                            mainNavigation?.push(webview, animated: true)
                         }
                         
                         WidgetView(title: "Contact us", icon: "ic_contactus") {
@@ -52,13 +52,13 @@ struct AccountScreenView: View {
                         WidgetView(title: "Change language", icon: "ic_change_language") {
                             let appSettingsURL = URL(string: UIApplication.openSettingsURLString)!
                                 .appendingPathComponent(Bundle.main.bundleIdentifier!)
-                            if let openSettingsUrl = URL(string: UIApplication.openSettingsURLString) {
+                            if URL(string: UIApplication.openSettingsURLString) != nil {
                                 UIApplication.shared.open(appSettingsURL, options: [:], completionHandler: nil)
                             }
                         }
                         
                         WidgetView(title: "Edit account", icon: "ic_editaccount") {
-                            navigation.push(EditAccountScreenView().asDestination(),
+                            mainNavigation?.push(EditAccountScreenView().asDestination(),
                                             animated: true)
                         }
                         
@@ -102,7 +102,7 @@ struct AccountScreenView: View {
                     navigation.dismissModal(animated: true, completion: nil)
                     navigation.push(LogInScreenView().asDestination(), animated: true)
                     
-                case .failure(let error):
+                case .failure(_):
                     let modal = ModalChooseOptionView(title: "Something went wrong",
                                                       description: "An error has occured and we couldn't complete the action. Please try again later.",
                                                       topButtonText: "Back") {
@@ -112,7 +112,7 @@ struct AccountScreenView: View {
                     
                 case .delete:
                     navigation.dismissModal(animated: true, completion: nil)
-                    ToastManager.instance?.show(
+                    ToastManager.instance.show(
                         Toast(
                             text: "Account deleted successfully!",
                             textColor: Color.accentTertiary

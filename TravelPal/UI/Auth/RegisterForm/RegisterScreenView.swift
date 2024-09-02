@@ -127,7 +127,7 @@ struct RegisterScreenView: View {
                     }
                     navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
                 case .register:
-                    navigation.replaceNavigationStack([MainScreenView().asDestination()], animated: true)
+                    navigation.replaceNavigationStack([TabBarScreen().asDestination()], animated: true)
                 }
             }
     }
