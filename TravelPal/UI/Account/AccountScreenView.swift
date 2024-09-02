@@ -94,6 +94,8 @@ struct AccountScreenView: View {
                             
                             navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
                         }
+                        
+                        WidgetView(title: "App version \(viewModel.appVersion)", icon: .icAppVersion) {}
                     }
                 }
             } else {

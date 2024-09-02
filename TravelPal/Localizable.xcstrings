@@ -101,6 +101,9 @@
     "Add a photo" : {
 
     },
+    "APP THEME" : {
+
+    },
     "Apple Card" : {
       "localizations" : {
         "en" : {
@@ -164,6 +167,9 @@
           }
         }
       }
+    },
+    "Change app theme" : {
+
     },
     "Chats" : {
       "localizations" : {
@@ -467,9 +473,6 @@
           }
         }
       }
-    },
-    "Hello, World!" : {
-
     },
     "here" : {
       "localizations" : {

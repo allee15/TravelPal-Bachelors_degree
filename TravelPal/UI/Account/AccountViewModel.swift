@@ -11,12 +11,6 @@ import FirebaseAuth
 import Firebase
 import FirebaseStorage
 
-enum ThemeType: String, CaseIterable {
-    case light
-    case dark
-    case system
-}
-
 enum LogOutCompletion {
     case logout
     case delete
@@ -31,6 +25,12 @@ class AccountViewModel: BaseViewModel {
     var userService = UserService.shared
     var firestoreService = FirestoreService.shared
     let eventSubject = PassthroughSubject<LogOutCompletion, Never>()
+    
+    var appVersion: String {
+        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown"
+        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown"
+        return "\(version) \(build)"
+    }
     
     override init() {
         super.init()
