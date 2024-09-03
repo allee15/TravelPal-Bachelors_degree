@@ -99,10 +99,20 @@
       }
     },
     "Add a photo" : {
-
-    },
-    "APP THEME" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add a photo"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă o fotografie"
+          }
+        }
+      }
     },
     "Apple Card" : {
       "localizations" : {
@@ -167,9 +177,6 @@
           }
         }
       }
-    },
-    "Change app theme" : {
-
     },
     "Chats" : {
       "localizations" : {
@@ -300,7 +307,20 @@
       }
     },
     "Discover the city you are visiting" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover the city you are visiting"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descoperă orașul pe care-l vizitezi"
+          }
+        }
+      }
     },
     "Duration: %lld minutes" : {
       "localizations" : {
@@ -417,6 +437,12 @@
     },
     "For more options, please click " : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For more options, please click "
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -476,6 +502,12 @@
     },
     "here" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "here"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -495,7 +527,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Am citit si accept"
+            "value" : "Am citit și accept"
           }
         }
       }
@@ -861,7 +893,20 @@
       }
     },
     "Scan a monument and find out more about it! Play our mini-game to test yourself, collect points and TODO!!!!" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan a monument and find out more about it! Play our mini-game to test yourself, collect points and TODO!!!!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scanează un monument și află mai multe despre acesta! Ia parte la jocul oferit de noi pentru a te testa, colectează puncte și TODO!!!!"
+          }
+        }
+      }
     },
     "See details >" : {
       "localizations" : {

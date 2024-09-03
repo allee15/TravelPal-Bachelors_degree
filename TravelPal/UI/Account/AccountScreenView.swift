@@ -57,11 +57,6 @@ struct AccountScreenView: View {
                             }
                         }
                         
-                        WidgetView(title: "Change theme", icon: .icChangeTheme) {
-                            mainNavigation?.push(ChangeThemeScreenView().asDestination(),
-                                            animated: true)
-                        }
-                        
                         WidgetView(title: "Edit account", icon: .icEditaccount) {
                             mainNavigation?.push(EditAccountScreenView().asDestination(),
                                             animated: true)

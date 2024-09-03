@@ -9,7 +9,6 @@ import Foundation
 
 enum UserDefaultsKeys {
     static let hasOnboardingCompleted = "onboardingIsOver"
-    static let appTheme = "appTheme"
 }
 
 public struct Key<T> {

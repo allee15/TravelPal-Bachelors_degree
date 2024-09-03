@@ -14,8 +14,6 @@
 		0FBA1FCA2C864B8A00559F95 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FC92C864B8A00559F95 /* AddPhotoView.swift */; };
 		0FBA1FCC2C864CBC00559F95 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FCB2C864CBC00559F95 /* ImagePicker.swift */; };
 		0FBA1FCE2C864DB200559F95 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FCD2C864DB200559F95 /* DiscoverViewModel.swift */; };
-		0FBA1FD12C86535B00559F95 /* ChangeThemeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FD02C86535B00559F95 /* ChangeThemeScreenView.swift */; };
-		0FBA1FD32C86538000559F95 /* ChangeThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FD22C86538000559F95 /* ChangeThemeViewModel.swift */; };
 		0FDCC0642C1DA0330079B737 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */; };
 		0FDCC0692C1DA4600079B737 /* FloatingField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0682C1DA4600079B737 /* FloatingField.swift */; };
 		0FDCC06B2C1DA4A90079B737 /* ModalChooseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC06A2C1DA4A90079B737 /* ModalChooseOptionView.swift */; };
@@ -110,8 +108,6 @@
 		0FBA1FC92C864B8A00559F95 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		0FBA1FCB2C864CBC00559F95 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0FBA1FCD2C864DB200559F95 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
-		0FBA1FD02C86535B00559F95 /* ChangeThemeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeThemeScreenView.swift; sourceTree = "<group>"; };
-		0FBA1FD22C86538000559F95 /* ChangeThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeThemeViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0682C1DA4600079B737 /* FloatingField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingField.swift; sourceTree = "<group>"; };
 		0FDCC06A2C1DA4A90079B737 /* ModalChooseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalChooseOptionView.swift; sourceTree = "<group>"; };
@@ -260,15 +256,6 @@
 			path = Discover;
 			sourceTree = "<group>";
 		};
-		0FBA1FCF2C86534C00559F95 /* ChangeTheme */ = {
-			isa = PBXGroup;
-			children = (
-				0FBA1FD02C86535B00559F95 /* ChangeThemeScreenView.swift */,
-				0FBA1FD22C86538000559F95 /* ChangeThemeViewModel.swift */,
-			);
-			path = ChangeTheme;
-			sourceTree = "<group>";
-		};
 		0FDCC0612C1D9FA30079B737 /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,7 +332,6 @@
 			children = (
 				8C12852A2A8CC913007F4AE8 /* AccountScreenView.swift */,
 				9B51B6CF2A8CFC2000587159 /* AccountViewModel.swift */,
-				0FBA1FCF2C86534C00559F95 /* ChangeTheme */,
 				9BD51AEA2B48B4E50083745C /* EditAccount */,
 			);
 			path = Account;
@@ -761,7 +747,6 @@
 				9BE570E52A84E17D003E6CEF /* OnBoardingScreenView.swift in Sources */,
 				8C1285172A8CC8D6007F4AE8 /* RoutesScreenView.swift in Sources */,
 				9B46E5FF2A7BAB6C00D533BE /* LogInViewModel.swift in Sources */,
-				0FBA1FD32C86538000559F95 /* ChangeThemeViewModel.swift in Sources */,
 				9B51B6FD2A94F87600587159 /* ConversationScreenView.swift in Sources */,
 				9B6C31A52A9F2B9E007855FD /* CountriesService.swift in Sources */,
 				9BD51AEC2B48B4FE0083745C /* EditAccountViewModel.swift in Sources */,
@@ -769,7 +754,6 @@
 				9BE570E22A84DE0E003E6CEF /* Colors.swift in Sources */,
 				0FBA1FC82C85D2F200559F95 /* ErrorInterceptor.swift in Sources */,
 				8C1285302A8CC927007F4AE8 /* AccomodationViewModel.swift in Sources */,
-				0FBA1FD12C86535B00559F95 /* ChangeThemeScreenView.swift in Sources */,
 				9BF51CFD2A9CF79100F9168B /* RoutesService.swift in Sources */,
 				9B2767002A9C8F65002BD7C9 /* AirportsService.swift in Sources */,
 				9B6C31AB2AA71123007855FD /* City.swift in Sources */,

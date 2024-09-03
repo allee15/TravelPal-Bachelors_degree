@@ -28,7 +28,6 @@ class RootViewModel: BaseViewModel {
     
     override init() {
         super.init()
-        applyTheme()
         setupErrorHandling()
     }
     
@@ -64,23 +63,6 @@ class RootViewModel: BaseViewModel {
         isLoadingBinding = true
         
         bind()
-    }
-    
-    func applyTheme() {
-        let key: Key<String> = Key(value: UserDefaultsKeys.appTheme)
-        if let themeString = userDefaultsService.getValue(key: key),
-           let theme = ThemeType(rawValue: themeString) {
-            switch theme {
-            case .light:
-                UIApplication.shared.windows.first?.overrideUserInterfaceStyle = .light
-            case .dark:
-                UIApplication.shared.windows.first?.overrideUserInterfaceStyle = .dark
-            case .system:
-                UIApplication.shared.windows.first?.overrideUserInterfaceStyle = .unspecified
-            }
-        } else {
-            UIApplication.shared.windows.first?.overrideUserInterfaceStyle = .unspecified
-        }
     }
 }
 
