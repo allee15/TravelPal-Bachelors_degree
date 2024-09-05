@@ -24,6 +24,7 @@
 		0FBA1FE62C89DF5200559F95 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */; };
 		0FBA1FE92C89E53600559F95 /* MiniGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE82C89E53600559F95 /* MiniGameScreen.swift */; };
 		0FBA1FEB2C89E54400559F95 /* MiniGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FEA2C89E54400559F95 /* MiniGameViewModel.swift */; };
+		0FBA1FED2C8A3CAF00559F95 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FEC2C8A3CAF00559F95 /* GameData.swift */; };
 		0FDCC0642C1DA0330079B737 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */; };
 		0FDCC0692C1DA4600079B737 /* FloatingField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0682C1DA4600079B737 /* FloatingField.swift */; };
 		0FDCC06B2C1DA4A90079B737 /* ModalChooseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC06A2C1DA4A90079B737 /* ModalChooseOptionView.swift */; };
@@ -127,6 +128,7 @@
 		0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../../../MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		0FBA1FE82C89E53600559F95 /* MiniGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameScreen.swift; sourceTree = "<group>"; };
 		0FBA1FEA2C89E54400559F95 /* MiniGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameViewModel.swift; sourceTree = "<group>"; };
+		0FBA1FEC2C8A3CAF00559F95 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0682C1DA4600079B737 /* FloatingField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingField.swift; sourceTree = "<group>"; };
 		0FDCC06A2C1DA4A90079B737 /* ModalChooseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalChooseOptionView.swift; sourceTree = "<group>"; };
@@ -566,6 +568,7 @@
 				9B51B6F22A94AED600587159 /* Message.swift */,
 				9B6C31AA2AA71123007855FD /* City.swift */,
 				0FBA1FDF2C89D9BD00559F95 /* Monument.swift */,
+				0FBA1FEC2C8A3CAF00559F95 /* GameData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 				9B51B6EC2A94A32000587159 /* Chat.swift in Sources */,
 				8C1285112A8CC8C7007F4AE8 /* FlightInfoScreenView.swift in Sources */,
 				9BF51CF92A9CF33A00F9168B /* RoutesAPI.swift in Sources */,
+				0FBA1FED2C8A3CAF00559F95 /* GameData.swift in Sources */,
 				9B51B6E22A9391DE00587159 /* UserDefaultsService.swift in Sources */,
 				0FDCC06B2C1DA4A90079B737 /* ModalChooseOptionView.swift in Sources */,
 				9BF53BB92B59D6DD00A154EC /* UnloggedUserView.swift in Sources */,
