@@ -10,7 +10,6 @@ import Kingfisher
 
 struct DiscoverScreenView: View {
     @EnvironmentObject private var navigation: Navigation
-    private let mainNavigation = EnvironmentObjects.navigation
     @StateObject private var viewModel = DiscoverViewModel()
     
     @State private var showSheet: Bool = false
@@ -57,14 +56,19 @@ struct DiscoverScreenView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.container, edges: [.horizontal, .bottom])
             .onChange(of: viewModel.image) { newValue in
-                if newValue != nil {
+                if let selectedImage = newValue {
                     self.showSheet = false
                     
-                    navigation.presentPopup(LoaderView().asDestination(), animated: true, completion: nil)
+                    navigation.presentPopup(LoaderViewWithBg().asDestination(), animated: true, completion: nil)
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
                         navigation.dismissModal(animated: true, completion: nil)
-                        mainNavigation?.push(AccountScreenView().asDestination(), animated: true)
+                        
+                        if let ciImage = viewModel.convertUIImageToCIImage(selectedImage) {
+                            viewModel.recognizeMonument(ciImage: ciImage)
+                        } else {
+                            print("Failed to convert UIImage to CIImage.")
+                        }
                     }
                 }
             }
@@ -72,9 +76,18 @@ struct DiscoverScreenView: View {
                 AddPhotoView(selectedImage: $viewModel.image,
                              hideBottomSheet: $showSheet)
             }
-            .overlay {
-                VStack {
-                    
+            .onReceive(viewModel.imageRecognitionCompletion) { event in
+                switch event {
+                case .completed(let monumentName):
+                    let vm = MonumentInfoViewModel(monumentName: monumentName)
+                    navigation.push(MonumentInfoScreen(viewModel: vm).asDestination(), animated: true)
+                case .error:
+                    let modal = ModalChooseOptionView(title: "Error",
+                                                      description: "An error has occured. Please try again!",
+                                                      topButtonText: "Try again") {
+                        navigation.dismissModal(animated: true, completion: nil)
+                    }
+                    navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
                 }
             }
     }

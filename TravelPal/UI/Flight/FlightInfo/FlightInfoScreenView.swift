@@ -249,31 +249,6 @@ struct FlightInfoScreenView: View {
     }
 }
 
-fileprivate struct ErrorView: View {
-    var body: some View {
-        VStack(alignment: .center, spacing: 12) {
-            
-            Text("At the moment there weren't found any available flights.")
-                .foregroundColor(Color.accentMain)
-                .font(.Poppins.regular(size: 16))
-                .multilineTextAlignment(.center)
-            
-            HStack(spacing: 8) {
-                Text("Come back later or refresh the page!")
-                    .foregroundColor(.black)
-                    .font(.Poppins.regular(size: 16))
-                    .multilineTextAlignment(.center)
-                
-                Image(.icSad)
-                    .resizable()
-                    .frame(width: 24, height: 24)
-            }
-        }
-        .padding(.horizontal, 16)
-        .padding(.top, 32)
-    }
-}
-
 fileprivate struct SearchField: View {
     @Binding var text: String
     var placeHolder: String

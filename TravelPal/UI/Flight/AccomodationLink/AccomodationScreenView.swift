@@ -18,7 +18,6 @@ struct AccomodationScreenView: View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
                 if let verifiedImage = viewModel.image {
-                    let _ = print("da")
                     HStack(spacing: 12) {
                         Spacer()
                         
@@ -47,7 +46,7 @@ struct AccomodationScreenView: View {
                         } label: {
                             Group {
                                 Text("For more options, please click ") +
-                                Text("here")
+                                Text("here.")
                                     .underline()
                             }
                             .font(.Poppins.semiBold(size: 14))

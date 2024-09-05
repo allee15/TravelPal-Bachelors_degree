@@ -147,6 +147,7 @@
       }
     },
     "At the moment there weren't found any available flights." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -435,6 +436,9 @@
         }
       }
     },
+    "For more information, please click " : {
+
+    },
     "For more options, please click " : {
       "localizations" : {
         "en" : {
@@ -500,7 +504,11 @@
         }
       }
     },
+    "Hello, World!" : {
+
+    },
     "here" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -515,6 +523,12 @@
           }
         }
       }
+    },
+    "here." : {
+
+    },
+    "Hi, my name is Juan! I'm here to guide you through your trip. Here is the information that you have asked for:" : {
+
     },
     "I read and agree to " : {
       "localizations" : {

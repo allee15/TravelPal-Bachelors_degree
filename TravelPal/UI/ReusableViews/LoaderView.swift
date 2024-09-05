@@ -37,3 +37,13 @@ struct LoaderView: View {
         }
     }
 }
+
+struct LoaderViewWithBg: View {
+   var body: some View {
+       ZStack {
+           Color.black.opacity(0.5)
+           LoaderView()
+       }.frame(maxWidth: .infinity, maxHeight: .infinity)
+           .ignoresSafeArea(.all)
+   }
+}

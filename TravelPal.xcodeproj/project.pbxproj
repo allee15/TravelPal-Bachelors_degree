@@ -14,6 +14,16 @@
 		0FBA1FCA2C864B8A00559F95 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FC92C864B8A00559F95 /* AddPhotoView.swift */; };
 		0FBA1FCC2C864CBC00559F95 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FCB2C864CBC00559F95 /* ImagePicker.swift */; };
 		0FBA1FCE2C864DB200559F95 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FCD2C864DB200559F95 /* DiscoverViewModel.swift */; };
+		0FBA1FD52C8746AD00559F95 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBA1FD42C8746AD00559F95 /* FirebaseMLModelDownloader */; };
+		0FBA1FDA2C89BBF500559F95 /* MonumentInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FD92C89BBF500559F95 /* MonumentInfoScreen.swift */; };
+		0FBA1FDC2C89BC0F00559F95 /* MonumentInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FDB2C89BC0F00559F95 /* MonumentInfoViewModel.swift */; };
+		0FBA1FDE2C89D97000559F95 /* MonumentInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FDD2C89D97000559F95 /* MonumentInfoAPI.swift */; };
+		0FBA1FE02C89D9BD00559F95 /* Monument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FDF2C89D9BD00559F95 /* Monument.swift */; };
+		0FBA1FE22C89DB8800559F95 /* MonumentInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE12C89DB8800559F95 /* MonumentInfoService.swift */; };
+		0FBA1FE42C89DCDA00559F95 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE32C89DCDA00559F95 /* ErrorView.swift */; };
+		0FBA1FE62C89DF5200559F95 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */; };
+		0FBA1FE92C89E53600559F95 /* MiniGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE82C89E53600559F95 /* MiniGameScreen.swift */; };
+		0FBA1FEB2C89E54400559F95 /* MiniGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FEA2C89E54400559F95 /* MiniGameViewModel.swift */; };
 		0FDCC0642C1DA0330079B737 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */; };
 		0FDCC0692C1DA4600079B737 /* FloatingField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0682C1DA4600079B737 /* FloatingField.swift */; };
 		0FDCC06B2C1DA4A90079B737 /* ModalChooseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC06A2C1DA4A90079B737 /* ModalChooseOptionView.swift */; };
@@ -108,6 +118,15 @@
 		0FBA1FC92C864B8A00559F95 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		0FBA1FCB2C864CBC00559F95 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0FBA1FCD2C864DB200559F95 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
+		0FBA1FD92C89BBF500559F95 /* MonumentInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentInfoScreen.swift; sourceTree = "<group>"; };
+		0FBA1FDB2C89BC0F00559F95 /* MonumentInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentInfoViewModel.swift; sourceTree = "<group>"; };
+		0FBA1FDD2C89D97000559F95 /* MonumentInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentInfoAPI.swift; sourceTree = "<group>"; };
+		0FBA1FDF2C89D9BD00559F95 /* Monument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monument.swift; sourceTree = "<group>"; };
+		0FBA1FE12C89DB8800559F95 /* MonumentInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentInfoService.swift; sourceTree = "<group>"; };
+		0FBA1FE32C89DCDA00559F95 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../../../MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		0FBA1FE82C89E53600559F95 /* MiniGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameScreen.swift; sourceTree = "<group>"; };
+		0FBA1FEA2C89E54400559F95 /* MiniGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0682C1DA4600079B737 /* FloatingField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingField.swift; sourceTree = "<group>"; };
 		0FDCC06A2C1DA4A90079B737 /* ModalChooseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalChooseOptionView.swift; sourceTree = "<group>"; };
@@ -229,6 +248,7 @@
 				9B6C31A72AA0CD25007855FD /* FirebaseStorage in Frameworks */,
 				9BE570DE2A83CD55003E6CEF /* Alamofire in Frameworks */,
 				1AC678282904B88D772F796C /* Pods_TravelPal.framework in Frameworks */,
+				0FBA1FD52C8746AD00559F95 /* FirebaseMLModelDownloader in Frameworks */,
 				9B46E6382A8140AA00D533BE /* Kingfisher in Frameworks */,
 				5E7BCE214D07EBE5674C7081 /* Pods_TravelPal.framework in Frameworks */,
 			);
@@ -252,8 +272,28 @@
 				0FBA1FC32C85CBF000559F95 /* DiscoverScreenView.swift */,
 				0FBA1FCD2C864DB200559F95 /* DiscoverViewModel.swift */,
 				0FBA1FC92C864B8A00559F95 /* AddPhotoView.swift */,
+				0FBA1FD82C89BBCD00559F95 /* MonumentInfo */,
+				0FBA1FE72C89E52400559F95 /* MiniGame */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		0FBA1FD82C89BBCD00559F95 /* MonumentInfo */ = {
+			isa = PBXGroup;
+			children = (
+				0FBA1FD92C89BBF500559F95 /* MonumentInfoScreen.swift */,
+				0FBA1FDB2C89BC0F00559F95 /* MonumentInfoViewModel.swift */,
+			);
+			path = MonumentInfo;
+			sourceTree = "<group>";
+		};
+		0FBA1FE72C89E52400559F95 /* MiniGame */ = {
+			isa = PBXGroup;
+			children = (
+				0FBA1FE82C89E53600559F95 /* MiniGameScreen.swift */,
+				0FBA1FEA2C89E54400559F95 /* MiniGameViewModel.swift */,
+			);
+			path = MiniGame;
 			sourceTree = "<group>";
 		};
 		0FDCC0612C1D9FA30079B737 /* ReusableViews */ = {
@@ -268,6 +308,7 @@
 				0FDCC06E2C1DB8140079B737 /* NavBarView.swift */,
 				9BD51AF12B4C04F00083745C /* WebViewScreen.swift */,
 				0F342DD62C625ED60093C08C /* ApplePayButtonView.swift */,
+				0FBA1FE32C89DCDA00559F95 /* ErrorView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -354,6 +395,7 @@
 				9BF51CF82A9CF33A00F9168B /* RoutesAPI.swift */,
 				9B6C31A02A9F299B007855FD /* CountriesAPI.swift */,
 				0FBA1FC72C85D2F200559F95 /* ErrorInterceptor.swift */,
+				0FBA1FDD2C89D97000559F95 /* MonumentInfoAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -367,6 +409,7 @@
 				9B51B6CD2A8CF6C500587159 /* UserService.swift */,
 				9B51B6E12A9391DE00587159 /* UserDefaultsService.swift */,
 				9B2766F92A977E0F002BD7C9 /* FirestoreService.swift */,
+				0FBA1FE12C89DB8800559F95 /* MonumentInfoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -470,6 +513,7 @@
 		9B46E5F42A7B974C00D533BE /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */,
 				9B7B5B2A2AEBB6DD00F4E9E1 /* ControllerRepresentable.swift */,
 				9B46E6162A7CE4FB00D533BE /* BaseViewModel.swift */,
 				8CE6C4E02A8E065A00B4A997 /* Navigation.swift */,
@@ -521,6 +565,7 @@
 				9B51B6EB2A94A32000587159 /* Chat.swift */,
 				9B51B6F22A94AED600587159 /* Message.swift */,
 				9B6C31AA2AA71123007855FD /* City.swift */,
+				0FBA1FDF2C89D9BD00559F95 /* Monument.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -631,6 +676,7 @@
 				9B6C31A62AA0CD25007855FD /* FirebaseStorage */,
 				9BB8A42D2AB88C67004EE67C /* AlertToast */,
 				0FDCC0712C1DBD890079B737 /* netfox */,
+				0FBA1FD42C8746AD00559F95 /* FirebaseMLModelDownloader */,
 			);
 			productName = TravelPal;
 			productReference = 9B46E5E32A7B973200D533BE /* TravelPal.app */;
@@ -731,6 +777,7 @@
 				8C1285122A8CC8C7007F4AE8 /* FlightInfoViewModel.swift in Sources */,
 				9B51B6FA2A94F05E00587159 /* ChatViewModell.swift in Sources */,
 				0FBA1FCA2C864B8A00559F95 /* AddPhotoView.swift in Sources */,
+				0FBA1FDA2C89BBF500559F95 /* MonumentInfoScreen.swift in Sources */,
 				8C9065AF2A9375840045E1DD /* ZipMany.swift in Sources */,
 				8C12851C2A8CC8E7007F4AE8 /* DepartureOptionsScreenView.swift in Sources */,
 				9B51B6EC2A94A32000587159 /* Chat.swift in Sources */,
@@ -752,6 +799,7 @@
 				9BD51AEC2B48B4FE0083745C /* EditAccountViewModel.swift in Sources */,
 				9B6C31A32A9F2AE8007855FD /* Country.swift in Sources */,
 				9BE570E22A84DE0E003E6CEF /* Colors.swift in Sources */,
+				0FBA1FDE2C89D97000559F95 /* MonumentInfoAPI.swift in Sources */,
 				0FBA1FC82C85D2F200559F95 /* ErrorInterceptor.swift in Sources */,
 				8C1285302A8CC927007F4AE8 /* AccomodationViewModel.swift in Sources */,
 				9BF51CFD2A9CF79100F9168B /* RoutesService.swift in Sources */,
@@ -776,6 +824,7 @@
 				8C1285332A8CC94B007F4AE8 /* ModalScreenView.swift in Sources */,
 				8CE6C4E12A8E065A00B4A997 /* Navigation.swift in Sources */,
 				9B51B6CE2A8CF6C500587159 /* UserService.swift in Sources */,
+				0FBA1FE62C89DF5200559F95 /* MobileNetV2.mlmodel in Sources */,
 				9B51B6CC2A8CEF1300587159 /* RegisterViewModel.swift in Sources */,
 				9B46E6172A7CE4FB00D533BE /* BaseViewModel.swift in Sources */,
 				9BB8A4262AB721F6004EE67C /* LoaderView.swift in Sources */,
@@ -784,15 +833,21 @@
 				0FBA1FC62C85CD4F00559F95 /* EnvironmentObjects.swift in Sources */,
 				8C1285222A8CC8F4007F4AE8 /* MapCarView.swift in Sources */,
 				9B2766F52A96442F002BD7C9 /* ConversationViewModel.swift in Sources */,
+				0FBA1FE42C89DCDA00559F95 /* ErrorView.swift in Sources */,
 				9B51B6F82A94F04000587159 /* ChatScreenVieww.swift in Sources */,
+				0FBA1FE02C89D9BD00559F95 /* Monument.swift in Sources */,
 				0F342DD72C625ED60093C08C /* ApplePayButtonView.swift in Sources */,
+				0FBA1FE92C89E53600559F95 /* MiniGameScreen.swift in Sources */,
 				0FBA1FC42C85CBF000559F95 /* DiscoverScreenView.swift in Sources */,
+				0FBA1FDC2C89BC0F00559F95 /* MonumentInfoViewModel.swift in Sources */,
 				8C12852F2A8CC927007F4AE8 /* AccomodationScreenView.swift in Sources */,
 				0FDCC0642C1DA0330079B737 /* OnboardingViewModel.swift in Sources */,
 				8C1285282A8CC904007F4AE8 /* TabBarViewModel.swift in Sources */,
+				0FBA1FE22C89DB8800559F95 /* MonumentInfoService.swift in Sources */,
 				8CE6C4E32A8E084C00B4A997 /* SceneDelegate.swift in Sources */,
 				8C1285162A8CC8D6007F4AE8 /* RoutesViewModel.swift in Sources */,
 				9B6C31A12A9F299B007855FD /* CountriesAPI.swift in Sources */,
+				0FBA1FEB2C89E54400559F95 /* MiniGameViewModel.swift in Sources */,
 				8C12851B2A8CC8E7007F4AE8 /* DepartureOptionsViewModel.swift in Sources */,
 				0FBA1FCE2C864DB200559F95 /* DiscoverViewModel.swift in Sources */,
 				9B51B6D02A8CFC2000587159 /* AccountViewModel.swift in Sources */,
@@ -1092,6 +1147,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0FBA1FD42C8746AD00559F95 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B46E5F72A7B9B0200D533BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
 		0FDCC0712C1DBD890079B737 /* netfox */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0FDCC0702C1DBD880079B737 /* XCRemoteSwiftPackageReference "netfox" */;

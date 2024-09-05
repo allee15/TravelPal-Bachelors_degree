@@ -104,7 +104,7 @@ struct DepartureOptionsScreenView: View {
                                                               countryArr: viewModel.countryArr,
                                                               image: viewModel.image)
                     
-                    navigation.presentPopup(LoaderView().asDestination(), animated: true, completion: nil)
+                    navigation.presentPopup(LoaderViewWithBg().asDestination(), animated: true, completion: nil)
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
                         navigation.dismissModal(animated: true, completion: nil)
