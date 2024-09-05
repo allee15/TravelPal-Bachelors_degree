@@ -19,11 +19,6 @@ struct MonumentInfoScreen: View {
                     navigation.pop(animated: true)
                 }
                 
-                Text(viewModel.monumentName)
-                    .foregroundStyle(Color.black)
-                    .font(.Poppins.semiBold(size: 24))
-                    .multilineTextAlignment(.leading)
-                
                 Spacer()
             }.padding(.horizontal, 16)
                 .padding(.top, 12)
