@@ -9,6 +9,7 @@ import Combine
 import UIKit
 import CoreML
 import Vision
+import Firebase
 
 enum ImageRecognitionCompletion {
     case completed(String)
@@ -16,8 +17,22 @@ enum ImageRecognitionCompletion {
 }
 
 class DiscoverViewModel: BaseViewModel {
+    var userService = UserService.shared
+    
+    @Published var user: User?
     @Published var image: UIImage?
+    
     let imageRecognitionCompletion = PassthroughSubject<ImageRecognitionCompletion, Never>()
+    
+    override init() {
+        super.init()
+        userService.user
+            .sink { _ in
+                
+            } receiveValue: { user in
+                self.user = user
+            } .store(in: &bag)
+    }
     
     func convertUIImageToCIImage(_ image: UIImage) -> CIImage? {
         if let ciImage = image.ciImage {

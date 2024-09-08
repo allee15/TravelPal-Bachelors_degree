@@ -81,6 +81,7 @@ struct DepartureOptionsScreenView: View {
                     
             } else {
                 UnloggedUserView()
+                    .padding(.bottom, 20)
             }
         }.background(Color.bgSecondary)
             .frame(maxWidth: .infinity, maxHeight: .infinity)

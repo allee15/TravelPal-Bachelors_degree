@@ -22,8 +22,6 @@
 		0FBA1FE22C89DB8800559F95 /* MonumentInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE12C89DB8800559F95 /* MonumentInfoService.swift */; };
 		0FBA1FE42C89DCDA00559F95 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE32C89DCDA00559F95 /* ErrorView.swift */; };
 		0FBA1FE62C89DF5200559F95 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */; };
-		0FBA1FE92C89E53600559F95 /* MiniGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE82C89E53600559F95 /* MiniGameScreen.swift */; };
-		0FBA1FEB2C89E54400559F95 /* MiniGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FEA2C89E54400559F95 /* MiniGameViewModel.swift */; };
 		0FBA1FED2C8A3CAF00559F95 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FEC2C8A3CAF00559F95 /* GameData.swift */; };
 		0FDCC0642C1DA0330079B737 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */; };
 		0FDCC0692C1DA4600079B737 /* FloatingField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0682C1DA4600079B737 /* FloatingField.swift */; };
@@ -126,8 +124,6 @@
 		0FBA1FE12C89DB8800559F95 /* MonumentInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentInfoService.swift; sourceTree = "<group>"; };
 		0FBA1FE32C89DCDA00559F95 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../../../MobileNetV2.mlmodel; sourceTree = "<group>"; };
-		0FBA1FE82C89E53600559F95 /* MiniGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameScreen.swift; sourceTree = "<group>"; };
-		0FBA1FEA2C89E54400559F95 /* MiniGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameViewModel.swift; sourceTree = "<group>"; };
 		0FBA1FEC2C8A3CAF00559F95 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0682C1DA4600079B737 /* FloatingField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingField.swift; sourceTree = "<group>"; };
@@ -275,7 +271,6 @@
 				0FBA1FCD2C864DB200559F95 /* DiscoverViewModel.swift */,
 				0FBA1FC92C864B8A00559F95 /* AddPhotoView.swift */,
 				0FBA1FD82C89BBCD00559F95 /* MonumentInfo */,
-				0FBA1FE72C89E52400559F95 /* MiniGame */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -287,15 +282,6 @@
 				0FBA1FDB2C89BC0F00559F95 /* MonumentInfoViewModel.swift */,
 			);
 			path = MonumentInfo;
-			sourceTree = "<group>";
-		};
-		0FBA1FE72C89E52400559F95 /* MiniGame */ = {
-			isa = PBXGroup;
-			children = (
-				0FBA1FE82C89E53600559F95 /* MiniGameScreen.swift */,
-				0FBA1FEA2C89E54400559F95 /* MiniGameViewModel.swift */,
-			);
-			path = MiniGame;
 			sourceTree = "<group>";
 		};
 		0FDCC0612C1D9FA30079B737 /* ReusableViews */ = {
@@ -841,7 +827,6 @@
 				9B51B6F82A94F04000587159 /* ChatScreenVieww.swift in Sources */,
 				0FBA1FE02C89D9BD00559F95 /* Monument.swift in Sources */,
 				0F342DD72C625ED60093C08C /* ApplePayButtonView.swift in Sources */,
-				0FBA1FE92C89E53600559F95 /* MiniGameScreen.swift in Sources */,
 				0FBA1FC42C85CBF000559F95 /* DiscoverScreenView.swift in Sources */,
 				0FBA1FDC2C89BC0F00559F95 /* MonumentInfoViewModel.swift in Sources */,
 				8C12852F2A8CC927007F4AE8 /* AccomodationScreenView.swift in Sources */,
@@ -851,7 +836,6 @@
 				8CE6C4E32A8E084C00B4A997 /* SceneDelegate.swift in Sources */,
 				8C1285162A8CC8D6007F4AE8 /* RoutesViewModel.swift in Sources */,
 				9B6C31A12A9F299B007855FD /* CountriesAPI.swift in Sources */,
-				0FBA1FEB2C89E54400559F95 /* MiniGameViewModel.swift in Sources */,
 				8C12851B2A8CC8E7007F4AE8 /* DepartureOptionsViewModel.swift in Sources */,
 				0FBA1FCE2C864DB200559F95 /* DiscoverViewModel.swift in Sources */,
 				9B51B6D02A8CFC2000587159 /* AccountViewModel.swift in Sources */,

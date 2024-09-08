@@ -10,7 +10,6 @@ import SwiftUI
 struct MonumentInfoScreen: View {
     @StateObject var viewModel: MonumentInfoViewModel
     @EnvironmentObject private var navigation: Navigation
-    @State private var showPopUp: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -74,35 +73,12 @@ struct MonumentInfoScreen: View {
         }.background(Color.bgSecondary)
         .ignoresSafeArea(.container, edges: [.horizontal, .bottom])
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .safeAreaInset(edge: .bottom) {
-                RedButtonView(text: "Next") {
-                    self.showPopUp = true
-                }.padding([.bottom, .horizontal], 16)
-            }
             .onAppear {
                 ToastManager.instance.show(
                     Toast(
                         text: "Monument identified successfully!",
                         textColor: Color.accentTertiary
                     ))
-            }
-            .onChange(of: showPopUp) { newValue in
-                if newValue {
-                    let modal = ModalChooseOptionView(title: "Are you ready?",
-                                                      description: "In the next part, our challenge designed to test your knowledges will begin! If you are not ready yet, just press „Not now” button. Remember, the points you win in this game, it will be added to your score. Good luck!",
-                                                      topButtonText: "Start",
-                                                      bottomButtonText: "Not now") {
-                        self.showPopUp = false
-                        navigation.dismissModal(animated: true, completion: nil)
-                        navigation.push(MiniGameScreen().asDestination(), animated: true)
-                    } onBottomButtonTapped: {
-                        self.showPopUp = false
-                        navigation.dismissModal(animated: true, completion: nil)
-                    }
-                    navigation.presentPopup(modal.asDestination(),
-                                            animated: true,
-                                            completion: nil)
-                }
             }
     }
 }

@@ -36,7 +36,7 @@ class FlightInfoViewModel: BaseViewModel {
     @Published var departureTextField = "" {
         didSet {
             if oldValue != departureTextField {
-                departureOption = departureTextField.count > 0
+                departureOption = departureTextField.count > 2
             }
         }
     }
@@ -45,7 +45,7 @@ class FlightInfoViewModel: BaseViewModel {
     @Published var arrivalTextField = "" {
         didSet {
             if oldValue != arrivalTextField {
-                arrivalOption = arrivalTextField.count > 0
+                arrivalOption = arrivalTextField.count > 2
             }
         }
     }

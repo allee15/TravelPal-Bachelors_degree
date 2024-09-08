@@ -504,9 +504,6 @@
         }
       }
     },
-    "Hello, World!" : {
-
-    },
     "here" : {
       "extractionState" : "stale",
       "localizations" : {

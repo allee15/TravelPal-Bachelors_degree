@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UnloggedUserView: View {
     @EnvironmentObject private var navigation: Navigation
+    private let mainNavigation = EnvironmentObjects.navigation
     
     var body: some View {
         VStack(spacing: 48) {
@@ -33,7 +34,7 @@ struct UnloggedUserView: View {
             Spacer()
             
             Button {
-                navigation.push(LogInScreenView().asDestination(), animated: true)
+                mainNavigation?.push(LogInScreenView().asDestination(), animated: true)
             } label: {
                 Text("Enter in your account")
                     .font(.Poppins.bold(size: 14))
