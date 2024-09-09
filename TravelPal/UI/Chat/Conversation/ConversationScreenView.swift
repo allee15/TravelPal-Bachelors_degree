@@ -55,7 +55,16 @@ struct ConversationScreenView: View {
                         VStack(spacing: 0) {
                             HStack(spacing: 8) {
                                 if !wasSentByMe {
-                                    ChatPicPlaceHolder(name: message.name)
+                                    ChatPicPlaceHolder(name: message.name) {
+                                        let modal = ParticipantDetailsModalView(email: message.email, name: message.name) {
+                                            ToastManager.instance.show(
+                                                Toast(
+                                                    text: "The text has been copied!",
+                                                    textColor: Color.accentTertiary
+                                                ))
+                                        }
+                                        navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
+                                    }
                                 }
                                 
                                 VStack(alignment: .leading, spacing: 8) {
@@ -102,26 +111,33 @@ struct ConversationScreenView: View {
 
 fileprivate struct ChatPicPlaceHolder: View {
     let name: String
+    var fontSize: CGFloat = 12
+    var width: CGFloat = 36
+    let action: () -> ()
     
     var body: some View {
-        VStack(spacing: 8) {
-            ZStack {
-                Circle()
-                    .fill(Color.white)
-                    .frame(width: 36, height: 36)
-                    .overlay(
-                        Circle()
-                            .stroke(Color.black, lineWidth: 2)
-                    )
+        Button {
+            action()
+        } label: {
+            VStack(spacing: 8) {
+                ZStack {
+                    Circle()
+                        .fill(Color.white)
+                        .frame(width: width, height: width)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.black, lineWidth: 2)
+                        )
+                    
+                    Text(name.first?.uppercased() ?? "A")
+                        .font(.Poppins.semiBold(size: fontSize))
+                        .foregroundColor(.black)
+                }
                 
-                Text(name.first?.uppercased() ?? "A")
-                    .font(.Poppins.semiBold(size: 12))
+                Text(name)
+                    .font(.Poppins.semiBold(size: fontSize))
                     .foregroundColor(.black)
             }
-            
-            Text(name)
-                .font(.Poppins.semiBold(size: 12))
-                .foregroundColor(.black)
         }
     }
 }
@@ -180,5 +196,58 @@ fileprivate struct SendMessageField: View {
             .frame(height: 54)
             .background(.white)
         }
+    }
+}
+
+fileprivate struct ParticipantDetailsModalView: View {
+    @EnvironmentObject private var navigation: Navigation
+    
+    let email: String
+    let name: String
+    let action: () -> ()
+    
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.4)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            VStack(spacing: 12) {
+                HStack {
+                    Button {
+                        navigation.dismissModal(animated: true, completion: nil)
+                    } label: {
+                        Image(.icNavClose)
+                            .frame(width: 32, height: 32)
+                    }
+                    
+                    Spacer()
+                }.padding(.bottom, 12)
+                
+                ChatPicPlaceHolder(name: name, fontSize: 20, width: 52) { }
+                
+                if !email.isEmpty {
+                    HStack {
+                        Text(email)
+                            .font(.Poppins.regular(size: 16))
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.center)
+                        
+                        Button {
+                            UIPasteboard.general.string = email
+                            action()
+                        } label: {
+                            Image(systemName: "doc.on.doc")
+                                .resizable()
+                                .frame(width: 16, height: 18)
+                                .foregroundStyle(Color.black)
+                        }
+                    }.padding(.horizontal, 12)
+                }
+                
+            }.padding([.horizontal, .top], 12)
+                .padding(.bottom, 24)
+                .background(Color.white.cornerRadius(8))
+                .padding(.horizontal, 24)
+        }.ignoresSafeArea()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
