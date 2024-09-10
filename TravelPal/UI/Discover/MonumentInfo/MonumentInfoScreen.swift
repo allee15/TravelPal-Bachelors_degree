@@ -46,25 +46,9 @@ struct MonumentInfoScreen: View {
                         
                     case .value(let monument):
                         VStack(alignment: .leading, spacing: 12) {
-                            Text(monument.title)
-                                .foregroundStyle(Color.black)
-                                .font(.Poppins.semiBold(size: 20))
-                                
                             Text(monument.description)
-                                .foregroundStyle(Color.contentSecondary)
-                                .font(.Poppins.regular(size: 14))
-                            
-                            Text(monument.extract)
                                 .foregroundStyle(Color.black)
                                 .font(.Poppins.regular(size: 14))
-                            
-                            Group {
-                                Text("For more information, please click ") +
-                                Text(.init("[here.](\(monument.link))"))
-                                    .underline()
-                            }.foregroundStyle(Color.black)
-                                .font(.Poppins.regular(size: 14))
-                                .tint(Color.black)
                         }
                     }
                 }.padding(.top, 20)

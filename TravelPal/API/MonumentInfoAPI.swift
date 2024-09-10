@@ -9,32 +9,38 @@ import Foundation
 import Combine
 import SwiftyJSON
 
+let PORT: String = "5000"
+
 class MonumentInfoAPI {
     func getInfo(monumentName: String) -> Future<Monument, Error> {
         Future { promise in
-            let urlComponents = URLComponents(string: "https://en.wikipedia.org/api/rest_v1/page/summary/\(monumentName)")
-            var urlRequest = URLRequest(url: (urlComponents?.url)!)
             
-            urlRequest.httpMethod = "GET"
+            var urlComponents = URLComponents(string: "http://127.0.0.1:\(PORT)/information/\(monumentName)")
+            urlComponents?.queryItems = [
+            ]
+            
+            var urlRequest = URLRequest(url: urlComponents!.url!)
+            urlRequest.httpMethod = "POST"
             
             let dataTask = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-                if let error = error {
+                guard error == nil else { return }
+                guard let data else { return }
+                
+                do {
+                    
+                    let json = try JSON(data: data)
+                    let data = json["query"].stringValue
+                    let monument = Monument(description: data)
+                    
+                    promise(.success(monument))
+                    
+                } catch(let error) {
+                    print(error)
                     promise(.failure(error))
-                } else {
-                    do {
-                        let json = try JSON(data: data!)
-                        let monument = Monument(title: json["title"].stringValue,
-                                                description: json["description"].stringValue,
-                                                extract: json["extract"].stringValue,
-                                                link: json["content_urls"]["mobile"]["page"].stringValue)
-                        
-                        promise(.success(monument))
-                        
-                    } catch {
-                        promise(.failure(error))
-                    }
                 }
+                
             }
+            
             dataTask.resume()
         }
     }
