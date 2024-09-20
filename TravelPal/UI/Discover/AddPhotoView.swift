@@ -15,6 +15,8 @@ struct AddPhotoView: View {
     @Binding var selectedImage: UIImage?
     @Binding var hideBottomSheet: Bool
     
+    let action: () -> ()
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
             VStack(spacing: 40) {
@@ -42,13 +44,28 @@ struct AddPhotoView: View {
                 }
             }.frame(maxWidth: .infinity)
                 .padding(.horizontal, 20)
+
+            if let selectedImage = selectedImage {
+                HStack {
+                    Spacer()
+                    Image(uiImage: selectedImage)
+                        .resizable()
+                        .aspectRatio(3/4, contentMode: .fit)
+
+                    Spacer()
+                }.padding(.top, 40)
+            }
             
             Spacer()
             
-            BlackButtonView(text: "Close") {
-                self.hideBottomSheet = false
+            VStack(spacing: 12) {
+                BlackButtonView(text: selectedImage != nil ? "Continue" : "Back") {
+                    self.hideBottomSheet = false
+                    if selectedImage != nil {
+                        action()
+                    }
+                }
             }.padding([.horizontal, .bottom], 20)
-            
         }.background(Color.white)
             .ignoresSafeArea(.container, edges: [.horizontal, .bottom])
             .sheet(isPresented: $pickPhoto) {

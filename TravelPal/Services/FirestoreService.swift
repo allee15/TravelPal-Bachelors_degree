@@ -261,4 +261,28 @@ class FirestoreService: BaseViewModel {
             }
         }
     }
+    
+    func uploadImageToFirebase(image: UIImage) -> Future<String, Error> {
+        Future { promise in
+            let imageData = image.jpegData(compressionQuality: 0.8)
+            let storageRef = Storage.storage().reference().child("images/\(UUID().uuidString).jpg")
+            
+            if let imageData = imageData {
+                storageRef.putData(imageData, metadata: nil) { metadata, error in
+                    if let error = error {
+                        promise(.failure(error))
+                        return
+                    }
+                    
+                    storageRef.downloadURL { url, error in
+                        if let error = error {
+                            promise(.failure(error))
+                        } else if let downloadURL = url {
+                            promise(.success(downloadURL.absoluteString))
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

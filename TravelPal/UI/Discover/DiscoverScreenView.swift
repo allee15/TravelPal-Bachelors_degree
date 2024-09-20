@@ -11,6 +11,7 @@ import Kingfisher
 struct DiscoverScreenView: View {
     @EnvironmentObject private var navigation: Navigation
     private let mainNavigation = EnvironmentObjects.navigation
+    
     @StateObject private var viewModel = DiscoverViewModel()
     
     @State private var showSheet: Bool = false
@@ -22,7 +23,7 @@ struct DiscoverScreenView: View {
                     .font(.Poppins.bold(size: 24))
                     .foregroundColor(.black)
                 
-                Text("Scan a monument and find out more about it! Play our mini-game to test yourself, collect points and TODO!!!!")
+                Text("Scan a monument and find out more about it!")
                     .font(.Poppins.regular(size: 12))
                     .foregroundStyle(Color.contentSecondary)
             }.padding(.top, 20)
@@ -32,17 +33,6 @@ struct DiscoverScreenView: View {
                     StepInfoWidgetView(icon: .icStep1, text: "Take or choose a photo")
                     StepInfoWidgetView(icon: .icStep2, text: "Read the information that our smart friend, Juan, will display on the screen")
                     
-                    if let image = viewModel.image {
-                        HStack {
-                            Spacer()
-                            Image(uiImage: image)
-                                .resizable()
-                                .clipShape(Circle())
-                                .aspectRatio(1, contentMode: .fit)
-                                .frame(width: (UIScreen.main.bounds.width - 32) / 1.5)
-                            Spacer()
-                        }.padding(.top, 40)
-                    }
                 }.padding(.top, 32)
             }
         }.padding(.horizontal, 16)
@@ -52,7 +42,7 @@ struct DiscoverScreenView: View {
                         self.showSheet = true
                     } else {
                         let modal = ModalChooseOptionView(title: "Error",
-                                                          description: "Please login to enjoy the full experience of TravelPall app!",
+                                                          description: "Please login to enjoy the full experience of TravelPal app!",
                                                           topButtonText: "Enter in your account",
                                                           bottomButtonText: "Close") {
                             navigation.dismissModal(animated: true, completion: nil)
@@ -69,39 +59,28 @@ struct DiscoverScreenView: View {
             .background(Color.bgSecondary)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.container, edges: [.horizontal, .bottom])
-            .onChange(of: viewModel.image) { newValue in
-                if let selectedImage = newValue {
-                    self.showSheet = false
-                    
-                    navigation.presentPopup(LoaderViewWithBg().asDestination(), animated: true, completion: nil)
-                    
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-                        navigation.dismissModal(animated: true, completion: nil)
-                        
-                        if let ciImage = viewModel.convertUIImageToCIImage(selectedImage) {
-                            viewModel.recognizeMonument(ciImage: ciImage)
-                        } else {
-                            print("Failed to convert UIImage to CIImage.")
-                        }
-                    }
-                }
-            }
             .sheet(isPresented: $showSheet) {
                 AddPhotoView(selectedImage: $viewModel.image,
-                             hideBottomSheet: $showSheet)
+                             hideBottomSheet: $showSheet) {
+                    viewModel.sendImage()
+                }
             }
-            .onReceive(viewModel.imageRecognitionCompletion) { event in
+            .onReceive(viewModel.imageSendingToAPICompletion) { event in
                 switch event {
                 case .completed(let monumentName):
+                    viewModel.image = nil
+                    navigation.dismissModal(animated: true, completion: nil)
                     let vm = MonumentInfoViewModel(monumentName: monumentName)
                     navigation.push(MonumentInfoScreen(viewModel: vm).asDestination(), animated: true)
                 case .error:
                     let modal = ModalChooseOptionView(title: "Error",
-                                                      description: "An error has occured. Please try again!",
+                                                      description: "An error occured. Please try again!",
                                                       topButtonText: "Try again") {
                         navigation.dismissModal(animated: true, completion: nil)
                     }
                     navigation.presentPopup(modal.asDestination(), animated: true, completion: nil)
+                case .loading:
+                    navigation.presentPopup(LoaderViewWithBg().asDestination(), animated: true, completion: nil)
                 }
             }
     }

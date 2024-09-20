@@ -49,20 +49,26 @@ struct MonumentInfoScreen: View {
                             Text(monument.description)
                                 .foregroundStyle(Color.black)
                                 .font(.Poppins.regular(size: 14))
+                                .padding(.all, 16)
+                                .background(Color.white)
+                                .cornerRadius(8, corners: .allCorners)
                         }
                     }
-                }.padding(.top, 20)
+                }.padding(.vertical, 20)
                     .padding(.horizontal, 16)
             }
         }.background(Color.bgSecondary)
         .ignoresSafeArea(.container, edges: [.horizontal, .bottom])
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .onAppear {
-                ToastManager.instance.show(
-                    Toast(
-                        text: "Monument identified successfully!",
-                        textColor: Color.accentTertiary
-                    ))
+            .onReceive(viewModel.monumentInfoCompletion) { event in
+                switch event {
+                case .completed:
+                    ToastManager.instance.show(
+                        Toast(
+                            text: "Monument identified successfully!",
+                            textColor: Color.accentTertiary
+                        ))
+                }
             }
     }
 }

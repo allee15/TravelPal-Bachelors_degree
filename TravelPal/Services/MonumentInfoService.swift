@@ -16,4 +16,8 @@ class MonumentInfoService {
     func getInfo(monumentName: String) -> Future<Monument, Error> {
         monumentInfoAPI.getInfo(monumentName: monumentName)
     }
+    
+    func sendImageUrlToSerpAPI(imageUrl: String) -> Future<String, Error> {
+        monumentInfoAPI.sendImageUrlToSerpAPI(imageUrl: imageUrl)
+    }
 }

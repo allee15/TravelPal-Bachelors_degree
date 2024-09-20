@@ -900,7 +900,11 @@
         }
       }
     },
+    "Scan a monument and find out more about it!" : {
+
+    },
     "Scan a monument and find out more about it! Play our mini-game to test yourself, collect points and TODO!!!!" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

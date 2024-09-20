@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 enum MonumentInfoState {
     case loading
@@ -13,11 +14,16 @@ enum MonumentInfoState {
     case value(Monument)
 }
 
+enum MonumentInfoCompletion {
+    case completed
+}
+
 class MonumentInfoViewModel: BaseViewModel {
     private var monumentInfoService = MonumentInfoService.shared
     
     @Published var monumentInfoState = MonumentInfoState.loading
     
+    let monumentInfoCompletion = PassthroughSubject<MonumentInfoCompletion, Never>()
     let monumentName: String
     
     init(monumentName: String) {
@@ -41,6 +47,7 @@ class MonumentInfoViewModel: BaseViewModel {
                 }
             } receiveValue: { [weak self] monument in
                 guard let self else {return}
+                self.monumentInfoCompletion.send(.completed)
                 self.monumentInfoState = .value(monument)
             } .store(in: &bag)
     }

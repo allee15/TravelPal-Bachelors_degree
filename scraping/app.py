@@ -1,11 +1,12 @@
 from bs4 import BeautifulSoup
 import requests
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 
-@app.route('/information', methods=['POST'])
 def scrape_wikipedia(query):
     url = f"https://en.wikipedia.org/wiki/{query}"
     page = requests.get(url)
@@ -18,16 +19,14 @@ def scrape_wikipedia(query):
 
 # print(scrape_wikipedia("Tour_Eiffel"))
 
+@app.route('/information', methods=['GET'])
 def generate_info():
-    data = request.get_json()
-    query = data.get('query')
+    query = request.args.get("query")
     if not query:
         return jsonify({"error": "No query provided"}), 400
     result = scrape_wikipedia(query)
-    return jsonify(result)
+    return jsonify({"query": result})
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-# run command -> python main.py
+    app.run(debug=True, host='0.0.0.0', port=5001)
