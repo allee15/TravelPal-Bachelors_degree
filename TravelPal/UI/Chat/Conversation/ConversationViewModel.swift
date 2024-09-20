@@ -16,7 +16,7 @@ class ConversationViewModel: BaseViewModel {
     @Published var message = ""
     @Published var messages: [Message] = []
     @Published var username: String = ""
-    
+    @Published var image: UIImage?
     
     var userService = UserService.shared
     var firestoreService = FirestoreService.shared

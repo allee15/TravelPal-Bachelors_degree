@@ -11,6 +11,8 @@ struct ConversationScreenView: View {
     @ObservedObject var viewModel: ConversationViewModel
     @EnvironmentObject private var navigation: Navigation
     
+    @State private var showSheet: Bool = false
+    
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 0) {
@@ -99,13 +101,22 @@ struct ConversationScreenView: View {
             
             SendMessageField(text: $viewModel.message,
                              placeHolder: "Type your message",
-                             icon: .icSend) {
+                             icon: .icSend,
+                             iconSecond: .icAddPhoto) {
                 viewModel.sendMessage()
+            } actionSecond: {
+                self.showSheet = true
             }
                 .padding(.bottom, 20)
         }.background(.white)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.container, edges: [.horizontal, .bottom])
+            .sheet(isPresented: $showSheet) {
+                AddPhotoView(selectedImage: $viewModel.image,
+                             hideBottomSheet: $showSheet) {
+                    //TODO send image to database
+                }
+            }
     }
 }
 
@@ -144,10 +155,12 @@ fileprivate struct ChatPicPlaceHolder: View {
 
 fileprivate struct SendMessageField: View {
     @Binding var text: String
-    var placeHolder: String
+    let placeHolder: String
     var colors: (bgColor: Color, borderColor: Color, placeholderForeground: Color) = (.bgSecondary, .bgSecondary, .contentSecondary)
-    var icon: ImageResource
+    let icon: ImageResource
+    let iconSecond: ImageResource
     let action: () -> ()
+    let actionSecond: () -> ()
     
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
@@ -179,7 +192,7 @@ fileprivate struct SendMessageField: View {
                     .offset(y: $text.wrappedValue.isEmpty ? 0 : 4 )
                     .padding(.trailing, 16)
                 
-                HStack {
+                HStack(spacing: 12) {
                     Spacer()
                     Button {
                         if !text.isEmpty {
@@ -188,10 +201,21 @@ fileprivate struct SendMessageField: View {
                     } label: {
                         Image(icon)
                             .resizable()
+                            .renderingMode(.template)
+                            .foregroundStyle(colors.placeholderForeground)
                             .frame(width: 24, height: 24)
-                            .padding(.trailing, 16)
                     }
-                }
+                    
+                    Button {
+                        actionSecond()
+                    } label: {
+                        Image(iconSecond)
+                            .resizable()
+                            .renderingMode(.template)
+                            .foregroundStyle(colors.placeholderForeground)
+                            .frame(width: 24, height: 24)
+                    }
+                } .padding(.horizontal, 16)
             }
             .frame(height: 54)
             .background(.white)

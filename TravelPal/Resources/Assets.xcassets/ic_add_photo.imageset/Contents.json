@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Icon=send.svg",
+      "filename" : "Icon=add_a_photo.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Icon=send 1.svg",
+      "filename" : "Icon=add_a_photo 1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Icon=send 2.svg",
+      "filename" : "Icon=add_a_photo 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
