@@ -59,16 +59,32 @@ struct AccomodationScreenView: View {
                         .padding(.bottom, 12)
                         .padding(.horizontal, 16)
                     
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 12) {
-                            ForEach(viewModel.hotels, id: \.self) { hotel in
-                                Image(hotel)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: UIScreen.main.bounds.width - 40)
+                    switch viewModel.propertiesState {
+                    case .failure(_):
+                        EmptyView()
+                        
+                    case .loading:
+                        VStack {
+                            Spacer()
+                            LoaderView()
+                            Spacer()
+                        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .background(Color.bgSecondary)
+                        
+                    case .value(let properties):
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 12) {
+                                ForEach(properties, id: \.id) { property in
+                                    Text(property.title)
+                                        .foregroundStyle(Color.black)
+//                                    Image(hotel)
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(height: UIScreen.main.bounds.width - 40)
+                                }
                             }
-                        }
-                    }.padding(.bottom, 32)
+                        }.padding(.bottom, 32)
+                    }
                 }
                 
                 Spacer()

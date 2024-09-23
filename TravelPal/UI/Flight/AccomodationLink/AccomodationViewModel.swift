@@ -11,8 +11,15 @@ import Combine
 import PDFKit
 import SwiftUI
 
+enum PropertiesState {
+    case loading
+    case failure(Error)
+    case value([Property])
+}
+
 class AccomodationViewModel: BaseViewModel {
     private var firestoreService = FirestoreService.shared
+    private var airbnbService = AirbnbService.shared
     
     @Published var route: Route
     @Published var countryArr: Country
@@ -27,12 +34,32 @@ class AccomodationViewModel: BaseViewModel {
                                        "img_hotel8",
                                        "img_hotel9",
                                        "img_hotel0"]
+    @Published var propertiesState = PropertiesState.loading
     
     init(route: Route, countryArr: Country, image: Image?) {
         self.route = route
         self.countryArr = countryArr
         self.image = image
         super.init()
+        self.getAirbnbProperties()
+    }
+    
+    private func getAirbnbProperties() {
+        self.propertiesState = .loading
+        let locationName = self.route.arrName.replaceSpacesWithUnderscores()
+        airbnbService.getProperties(location: locationName)
+            .sink { [weak self] completion in
+                guard let self else {return}
+                switch completion {
+                case .failure(let error):
+                    self.propertiesState = .failure(error)
+                case .finished:
+                    break
+                }
+            } receiveValue: { [weak self] properties in
+                guard let self else {return}
+                self.propertiesState = .value(properties)
+            }.store(in: &bag)
     }
     
     func updateUser() {

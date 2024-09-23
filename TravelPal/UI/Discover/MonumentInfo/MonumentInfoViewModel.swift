@@ -34,7 +34,7 @@ class MonumentInfoViewModel: BaseViewModel {
     
     func loadMonumentInfo() {
         monumentInfoState = .loading
-        let monument = self.replaceSpacesWithUnderscores(input: self.monumentName)
+        let monument = self.monumentName.replaceSpacesWithUnderscores()
         monumentInfoService.getInfo(monumentName: monument)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
@@ -50,9 +50,5 @@ class MonumentInfoViewModel: BaseViewModel {
                 self.monumentInfoCompletion.send(.completed)
                 self.monumentInfoState = .value(monument)
             } .store(in: &bag)
-    }
-    
-    func replaceSpacesWithUnderscores(input: String) -> String {
-        return input.replacingOccurrences(of: " ", with: "_")
     }
 }

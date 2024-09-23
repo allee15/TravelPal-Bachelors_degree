@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F342DD72C625ED60093C08C /* ApplePayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F342DD62C625ED60093C08C /* ApplePayButtonView.swift */; };
+		0F8C66122CA1A2C70054D5B6 /* AirbnbAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C66112CA1A2C70054D5B6 /* AirbnbAPI.swift */; };
+		0F8C66142CA1A2E00054D5B6 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C66132CA1A2E00054D5B6 /* Property.swift */; };
+		0F8C66162CA1A4020054D5B6 /* AirbnbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C66152CA1A4020054D5B6 /* AirbnbService.swift */; };
 		0FBA1FC42C85CBF000559F95 /* DiscoverScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FC32C85CBF000559F95 /* DiscoverScreenView.swift */; };
 		0FBA1FC62C85CD4F00559F95 /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FC52C85CD4F00559F95 /* EnvironmentObjects.swift */; };
 		0FBA1FC82C85D2F200559F95 /* ErrorInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FC72C85D2F200559F95 /* ErrorInterceptor.swift */; };
@@ -21,8 +24,6 @@
 		0FBA1FE02C89D9BD00559F95 /* Monument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FDF2C89D9BD00559F95 /* Monument.swift */; };
 		0FBA1FE22C89DB8800559F95 /* MonumentInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE12C89DB8800559F95 /* MonumentInfoService.swift */; };
 		0FBA1FE42C89DCDA00559F95 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE32C89DCDA00559F95 /* ErrorView.swift */; };
-		0FBA1FE62C89DF5200559F95 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */; };
-		0FBA1FED2C8A3CAF00559F95 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FEC2C8A3CAF00559F95 /* GameData.swift */; };
 		0FDCC0642C1DA0330079B737 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */; };
 		0FDCC0692C1DA4600079B737 /* FloatingField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC0682C1DA4600079B737 /* FloatingField.swift */; };
 		0FDCC06B2C1DA4A90079B737 /* ModalChooseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCC06A2C1DA4A90079B737 /* ModalChooseOptionView.swift */; };
@@ -111,6 +112,9 @@
 
 /* Begin PBXFileReference section */
 		0F342DD62C625ED60093C08C /* ApplePayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayButtonView.swift; sourceTree = "<group>"; };
+		0F8C66112CA1A2C70054D5B6 /* AirbnbAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbAPI.swift; sourceTree = "<group>"; };
+		0F8C66132CA1A2E00054D5B6 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		0F8C66152CA1A4020054D5B6 /* AirbnbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbService.swift; sourceTree = "<group>"; };
 		0FBA1FC32C85CBF000559F95 /* DiscoverScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverScreenView.swift; sourceTree = "<group>"; };
 		0FBA1FC52C85CD4F00559F95 /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
 		0FBA1FC72C85D2F200559F95 /* ErrorInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorInterceptor.swift; sourceTree = "<group>"; };
@@ -123,8 +127,6 @@
 		0FBA1FDF2C89D9BD00559F95 /* Monument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monument.swift; sourceTree = "<group>"; };
 		0FBA1FE12C89DB8800559F95 /* MonumentInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentInfoService.swift; sourceTree = "<group>"; };
 		0FBA1FE32C89DCDA00559F95 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../../../MobileNetV2.mlmodel; sourceTree = "<group>"; };
-		0FBA1FEC2C8A3CAF00559F95 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		0FDCC0632C1DA0330079B737 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		0FDCC0682C1DA4600079B737 /* FloatingField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingField.swift; sourceTree = "<group>"; };
 		0FDCC06A2C1DA4A90079B737 /* ModalChooseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalChooseOptionView.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				9B6C31A02A9F299B007855FD /* CountriesAPI.swift */,
 				0FBA1FC72C85D2F200559F95 /* ErrorInterceptor.swift */,
 				0FBA1FDD2C89D97000559F95 /* MonumentInfoAPI.swift */,
+				0F8C66112CA1A2C70054D5B6 /* AirbnbAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				9B51B6E12A9391DE00587159 /* UserDefaultsService.swift */,
 				9B2766F92A977E0F002BD7C9 /* FirestoreService.swift */,
 				0FBA1FE12C89DB8800559F95 /* MonumentInfoService.swift */,
+				0F8C66152CA1A4020054D5B6 /* AirbnbService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -493,7 +497,6 @@
 		9B46E5F42A7B974C00D533BE /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				0FBA1FE52C89DF5200559F95 /* MobileNetV2.mlmodel */,
 				9B7B5B2A2AEBB6DD00F4E9E1 /* ControllerRepresentable.swift */,
 				9B46E6162A7CE4FB00D533BE /* BaseViewModel.swift */,
 				8CE6C4E02A8E065A00B4A997 /* Navigation.swift */,
@@ -546,7 +549,7 @@
 				9B51B6F22A94AED600587159 /* Message.swift */,
 				9B6C31AA2AA71123007855FD /* City.swift */,
 				0FBA1FDF2C89D9BD00559F95 /* Monument.swift */,
-				0FBA1FEC2C8A3CAF00559F95 /* GameData.swift */,
+				0F8C66132CA1A2E00054D5B6 /* Property.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -764,7 +767,6 @@
 				9B51B6EC2A94A32000587159 /* Chat.swift in Sources */,
 				8C1285112A8CC8C7007F4AE8 /* FlightInfoScreenView.swift in Sources */,
 				9BF51CF92A9CF33A00F9168B /* RoutesAPI.swift in Sources */,
-				0FBA1FED2C8A3CAF00559F95 /* GameData.swift in Sources */,
 				9B51B6E22A9391DE00587159 /* UserDefaultsService.swift in Sources */,
 				0FDCC06B2C1DA4A90079B737 /* ModalChooseOptionView.swift in Sources */,
 				9BF53BB92B59D6DD00A154EC /* UnloggedUserView.swift in Sources */,
@@ -773,6 +775,7 @@
 				9BF53BB62B59D6AD00A154EC /* TabButton.swift in Sources */,
 				0FDCC0692C1DA4600079B737 /* FloatingField.swift in Sources */,
 				0FDCC06D2C1DAB6C0079B737 /* String+.swift in Sources */,
+				0F8C66162CA1A4020054D5B6 /* AirbnbService.swift in Sources */,
 				9BE570E52A84E17D003E6CEF /* OnBoardingScreenView.swift in Sources */,
 				8C1285172A8CC8D6007F4AE8 /* RoutesScreenView.swift in Sources */,
 				9B46E5FF2A7BAB6C00D533BE /* LogInViewModel.swift in Sources */,
@@ -797,6 +800,7 @@
 				9B51B6E82A93B02400587159 /* View+.swift in Sources */,
 				0FBA1FCC2C864CBC00559F95 /* ImagePicker.swift in Sources */,
 				0FDCC06F2C1DB8140079B737 /* NavBarView.swift in Sources */,
+				0F8C66122CA1A2C70054D5B6 /* AirbnbAPI.swift in Sources */,
 				9B51B6E42A93A09500587159 /* Buttons.swift in Sources */,
 				9BE570D72A83943B003E6CEF /* Fonts.swift in Sources */,
 				9BE570D92A83999E003E6CEF /* LogInScreenView.swift in Sources */,
@@ -806,7 +810,6 @@
 				8C1285332A8CC94B007F4AE8 /* ModalScreenView.swift in Sources */,
 				8CE6C4E12A8E065A00B4A997 /* Navigation.swift in Sources */,
 				9B51B6CE2A8CF6C500587159 /* UserService.swift in Sources */,
-				0FBA1FE62C89DF5200559F95 /* MobileNetV2.mlmodel in Sources */,
 				9B51B6CC2A8CEF1300587159 /* RegisterViewModel.swift in Sources */,
 				9B46E6172A7CE4FB00D533BE /* BaseViewModel.swift in Sources */,
 				9BB8A4262AB721F6004EE67C /* LoaderView.swift in Sources */,
@@ -819,6 +822,7 @@
 				9B51B6F82A94F04000587159 /* ChatScreenVieww.swift in Sources */,
 				0FBA1FE02C89D9BD00559F95 /* Monument.swift in Sources */,
 				0F342DD72C625ED60093C08C /* ApplePayButtonView.swift in Sources */,
+				0F8C66142CA1A2E00054D5B6 /* Property.swift in Sources */,
 				0FBA1FC42C85CBF000559F95 /* DiscoverScreenView.swift in Sources */,
 				0FBA1FDC2C89BC0F00559F95 /* MonumentInfoViewModel.swift in Sources */,
 				8C12852F2A8CC927007F4AE8 /* AccomodationScreenView.swift in Sources */,
