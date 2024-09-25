@@ -53,21 +53,26 @@ class ConversationViewModel: BaseViewModel {
     }
     
     func sendMessage() {
-        let db = Firestore.firestore()
-        var newDocument: DocumentReference?
-        
-        newDocument = db.collection("Chat").document(self.city).collection("Message").addDocument(data: [
-            "email": self.user?.email as Any,
-            "message": self.message,
-            "date": Timestamp(date: Date()),
-            "name": self.username
-        ]) { error in
-            if let error = error {
-                print("Error adding document: \(error)")
-            } else  if let document = newDocument {
-                print("Document added with ID: \(document.documentID)")
-                self.message = ""
+        if !message.isEmpty {
+            let db = Firestore.firestore()
+            var newDocument: DocumentReference?
+            
+            newDocument = db.collection("Chat").document(self.city).collection("Message").addDocument(data: [
+                "email": self.user?.email as Any,
+                "message": self.message,
+                "date": Timestamp(date: Date()),
+                "name": self.username
+            ]) { error in
+                if let error = error {
+                    print("Error adding document: \(error)")
+                } else  if let document = newDocument {
+                    print("Document added with ID: \(document.documentID)")
+                    self.message = ""
+                }
             }
+        } else if let image = image {
+            let imageData = image.jpegData(compressionQuality: 0.8)
+            //todo send image
         }
     }
     

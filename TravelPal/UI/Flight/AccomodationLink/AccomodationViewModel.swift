@@ -71,8 +71,7 @@ class AccomodationViewModel: BaseViewModel {
     }
     
     func openAirBnb() {
-        if let encodedDestination = route.arrName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
-           let url = URL(string: "https://www.airbnb.com/s/\(encodedDestination)/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_length=3&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&date_picker_type=calendar&checkin=2024-07-03&checkout=2024-07-04&adults=1&source=structured_search_input_header&search_type=filter_change") {
+        if let url = URL(string: "https://www.airbnb.com/s/\(route.arrName.replaceSpacesWithUnderscores())/homes") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
