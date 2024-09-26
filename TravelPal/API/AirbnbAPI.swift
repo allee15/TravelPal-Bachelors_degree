@@ -31,7 +31,8 @@ class AirbnbAPI {
                     let properties = json["properties"]
                     for (_, item) in properties {
                         let property = Property(title: item["title"].stringValue,
-                                                image: item["image"].stringValue)
+                                                image: item["image"].stringValue,
+                                                price: item["price"].stringValue)
                         arrayToReturn.append(property)
                     }
                     promise(.success(arrayToReturn))

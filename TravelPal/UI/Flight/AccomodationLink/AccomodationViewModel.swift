@@ -24,16 +24,6 @@ class AccomodationViewModel: BaseViewModel {
     @Published var route: Route
     @Published var countryArr: Country
     @Published var image: Image?
-    @Published var hotels: [String] = ["img_hotel1",
-                                       "img_hotel2",
-                                       "img_hotel3",
-                                       "img_hotel4",
-                                       "img_hotel5",
-                                       "img_hotel6",
-                                       "img_hotel7",
-                                       "img_hotel8",
-                                       "img_hotel9",
-                                       "img_hotel0"]
     @Published var propertiesState = PropertiesState.loading
     
     init(route: Route, countryArr: Country, image: Image?) {

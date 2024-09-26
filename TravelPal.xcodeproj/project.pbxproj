@@ -11,6 +11,7 @@
 		0F8C66122CA1A2C70054D5B6 /* AirbnbAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C66112CA1A2C70054D5B6 /* AirbnbAPI.swift */; };
 		0F8C66142CA1A2E00054D5B6 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C66132CA1A2E00054D5B6 /* Property.swift */; };
 		0F8C66162CA1A4020054D5B6 /* AirbnbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C66152CA1A4020054D5B6 /* AirbnbService.swift */; };
+		0F8C66182CA5F1260054D5B6 /* KFImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C66172CA5F1260054D5B6 /* KFImage+.swift */; };
 		0FBA1FC42C85CBF000559F95 /* DiscoverScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FC32C85CBF000559F95 /* DiscoverScreenView.swift */; };
 		0FBA1FC62C85CD4F00559F95 /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FC52C85CD4F00559F95 /* EnvironmentObjects.swift */; };
 		0FBA1FC82C85D2F200559F95 /* ErrorInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA1FC72C85D2F200559F95 /* ErrorInterceptor.swift */; };
@@ -115,6 +116,7 @@
 		0F8C66112CA1A2C70054D5B6 /* AirbnbAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbAPI.swift; sourceTree = "<group>"; };
 		0F8C66132CA1A2E00054D5B6 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		0F8C66152CA1A4020054D5B6 /* AirbnbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbService.swift; sourceTree = "<group>"; };
+		0F8C66172CA5F1260054D5B6 /* KFImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KFImage+.swift"; sourceTree = "<group>"; };
 		0FBA1FC32C85CBF000559F95 /* DiscoverScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverScreenView.swift; sourceTree = "<group>"; };
 		0FBA1FC52C85CD4F00559F95 /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
 		0FBA1FC72C85D2F200559F95 /* ErrorInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorInterceptor.swift; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 				9B46E5E42A7B973200D533BE /* Products */,
 				9B46E5F52A7B9A4D00D533BE /* GoogleService-Info.plist */,
 				0FBA1FCB2C864CBC00559F95 /* ImagePicker.swift */,
+				0F8C66172CA5F1260054D5B6 /* KFImage+.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -821,6 +824,7 @@
 				0FBA1FE42C89DCDA00559F95 /* ErrorView.swift in Sources */,
 				9B51B6F82A94F04000587159 /* ChatScreenVieww.swift in Sources */,
 				0FBA1FE02C89D9BD00559F95 /* Monument.swift in Sources */,
+				0F8C66182CA5F1260054D5B6 /* KFImage+.swift in Sources */,
 				0F342DD72C625ED60093C08C /* ApplePayButtonView.swift in Sources */,
 				0F8C66142CA1A2E00054D5B6 /* Property.swift in Sources */,
 				0FBA1FC42C85CBF000559F95 /* DiscoverScreenView.swift in Sources */,

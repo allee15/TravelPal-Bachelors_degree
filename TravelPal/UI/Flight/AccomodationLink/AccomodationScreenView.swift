@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PDFKit
+import Kingfisher
 
 struct AccomodationScreenView: View {
     @ObservedObject var viewModel: AccomodationViewModel
@@ -56,7 +57,6 @@ struct AccomodationScreenView: View {
                         .background(.white)
                         .shadow(color: .bgSecondary, radius: 3)
                         .padding(.top, 32)
-                        .padding(.bottom, 12)
                         .padding(.horizontal, 16)
                     
                     switch viewModel.propertiesState {
@@ -72,22 +72,13 @@ struct AccomodationScreenView: View {
                             .background(Color.bgSecondary)
                         
                     case .value(let properties):
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 12) {
-                                ForEach(properties, id: \.id) { property in
-                                    Text(property.title)
-                                        .foregroundStyle(Color.black)
-//                                    Image(hotel)
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .frame(height: UIScreen.main.bounds.width - 40)
-                                }
+                        ForEach(properties, id: \.id) { property in
+                            HotelWidgetView(hotel: property) {
+                                viewModel.openAirBnb()
                             }
-                        }.padding(.bottom, 32)
+                        }
                     }
-                }
-                
-                Spacer()
+                }.padding(.bottom, 28)
             }.background(Color.bgSecondary)
             
             VStack(spacing: 0) {
@@ -126,3 +117,34 @@ struct AccomodationScreenView: View {
     }
 }
 
+struct HotelWidgetView: View {
+    let hotel: Property
+    let action: () -> ()
+    
+    var body: some View {
+        Button {
+            action()
+        } label: {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(alignment: .center) {
+                    Text(hotel.title)
+                        .foregroundStyle(Color.black)
+                        .font(.Poppins.semiBold(size: 20))
+                    Spacer()
+                    Text(hotel.price)
+                        .foregroundStyle(Color.black)
+                        .font(.Poppins.regular(size: 14))
+                }
+                
+                KFImage(URL(string: hotel.image))
+                    .resizable()
+                    .centerCropped()
+                    .aspectRatio(16/9, contentMode: .fit)
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 16)
+            .background(.white)
+            .padding(.horizontal, 16)
+        }
+    }
+}
